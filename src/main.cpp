@@ -8,7 +8,7 @@ int main() {
     printf("%d\n", getTriangleType(3, 4, 5));
     return 0;
 }
-#endif // TEST 123 分支測試 123
+#endif // TEST 123 分支測試 123  自動測試
 
 
 int addNumber(int a, int b) {
