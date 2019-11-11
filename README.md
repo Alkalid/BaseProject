@@ -1,5 +1,6 @@
-# 組名
-[![Build Status](https://travis-ci.org/Alkalid/BaseProject.svg?branch=master)](https://travis-ci.org/Alkalid/BaseProject)
+# 測試
+[![Build Status](https://travis-ci.org/Alka
+lid/BaseProject.svg?branch=master)](https://travis-ci.org/Alkalid/BaseProject)
 [![codecov](https://codecov.io/gh/Alkalid/BaseProject/branch/master/graph/badge.svg)](https://codecov.io/gh/Alkalid/BaseProject)
 
 分組專題基本樣板(C++)
