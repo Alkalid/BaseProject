@@ -9,5 +9,6 @@ int main() {
     /*hahahahaha*/
     assert(addNumber(5, 2) == 7);
     testGetTriangleType();
+    printf("sd wqdqwdasdsadsadsad");
     return 0;
 }
