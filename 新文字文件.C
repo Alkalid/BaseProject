@@ -1,1 +1,4 @@
-/*fuckmidterm*/ 
+#include<stdio.h>
+int main(){
+	
+}
