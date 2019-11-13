@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/*
+writen by Jibanyan_FCU
+*/
 typedef struct node{
     int n;
     struct node *leftptr;
