@@ -31,7 +31,7 @@ public class PersonGroup_Get
 
 
          // Request body
-         StringEntity reqEntity = new StringEntity("{group1}");
+         StringEntity reqEntity = new StringEntity("{Group1}");
          request.setEntity(reqEntity);
 
          HttpResponse response = httpclient.execute(request);
