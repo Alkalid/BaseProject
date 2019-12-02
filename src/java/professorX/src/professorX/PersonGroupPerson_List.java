@@ -7,7 +7,7 @@ import java.net.URI;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
@@ -20,19 +20,19 @@ public class PersonGroupPerson_List
 
      try
      {
-         URIBuilder builder = new URIBuilder("https://eastasia.api.cognitive.microsoft.com/face/v1.0/persongroups/{personGroupId}/persons");
+         URIBuilder builder = new URIBuilder("https://eastasia.api.cognitive.microsoft.com/face/v1.0/persongroups/test_group/persons");
 
-         builder.setParameter("start", "{string}");
+         builder.setParameter("start", "1");
          builder.setParameter("top", "1000");
 
          URI uri = builder.build();
-         HttpPost request = new HttpPost(uri);
-         request.setHeader("Ocp-Apim-Subscription-Key", "{subscription key}");
+         HttpGet request = new HttpGet(uri);
+         request.setHeader("Ocp-Apim-Subscription-Key", "30d2ac8ee3bb4df0a42e82b24b315599");
 
 
          // Request body
-         StringEntity reqEntity = new StringEntity("{body}");
-         request.setEntity(reqEntity);
+         //StringEntity reqEntity = new StringEntity("{body}");
+         //request.setEntity(reqEntity);
 
          HttpResponse response = httpclient.execute(request);
          HttpEntity entity = response.getEntity();
