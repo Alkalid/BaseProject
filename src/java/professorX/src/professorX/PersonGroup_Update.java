@@ -1,18 +1,18 @@
 package professorX;
 
-//ΩT©w•i•H≥–´ÿ
+
 //// This sample uses the Apache HTTP client from HTTP Components (http://hc.apache.org/httpcomponents-client-ga/)
 import java.net.URI;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.methods.HttpPatch;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.HttpClients;
-import org.apache.http.util.EntityUtils;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.util.EntityUtils;
 
-public class PersonGroupPerson_Create 
+public class PersonGroup_Update 
 {
  public static void main(String[] args) 
  {
@@ -20,26 +20,30 @@ public class PersonGroupPerson_Create
 
      try
      {
-         URIBuilder builder = new URIBuilder("https://eastasia.api.cognitive.microsoft.com/face/v1.0/persongroups/test_group/persons");
+    	 //ÁõÆÂâç‰∏≠ÊñáÈÇÑÁÑ°Ê≥ïË®≠ÂÆö„ÄÇ
+    	 String personId = "ce5b9b0c-ff40-41c3-8f21-b414b06259f9";
+    	 String UpdateName = "xu";
+    	 String UpdateUserData = "FCU IECS Teacher";
+    	 
+         URIBuilder builder = new URIBuilder("https://eastasia.api.cognitive.microsoft.com/face/v1.0/persongroups/test_group/persons/"+personId);
 
 
          URI uri = builder.build();
-         HttpPost request = new HttpPost(uri);
+         HttpPatch request = new HttpPatch(uri);
          request.setHeader("Content-Type", "application/json");
          request.setHeader("Ocp-Apim-Subscription-Key", "30d2ac8ee3bb4df0a42e82b24b315599");
 
-         String name = "Kartd";
-         String userData = "Kartd who is handsome man";
+
          // Request body
          StringEntity reqEntity = new StringEntity(
         		 "{" + 
-        //		"    \"name\": \"Person2\", " + 
-         		"    \"name\": \"" + name + "\", " +
-        // 		"    \"userData\": \"this is Person2.\" " + 
-         		"    \"userData\": \"" + userData +"\", " +
-         		
-         		"}"
-         		);
+	       
+	         		"    \"name\": \"" + UpdateName + "\", " +
+	        
+	         		"    \"userData\": \"" + UpdateUserData +"\", " +
+	         		
+	         		"}"
+        		 );
          request.setEntity(reqEntity);
 
          HttpResponse response = httpclient.execute(request);
