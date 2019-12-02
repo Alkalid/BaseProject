@@ -21,9 +21,9 @@ public class PersonGroupPerson_Update
      try
      {
     	 //目前中文還無法設定。
-    	 String personId = "ce5b9b0c-ff40-41c3-8f21-b414b06259f9";
-    	 String UpdateName = "xu";
-    	 String UpdateUserData = "FCU IECS Teacher";
+    	 String personId = "fbcaec47-2961-4306-9394-e200e56b8520";
+    	 String UpdateName = "katrina";
+    	 String UpdateUserData = "dear";
     	 
          URIBuilder builder = new URIBuilder("https://eastasia.api.cognitive.microsoft.com/face/v1.0/persongroups/test_group/persons/"+personId);
 

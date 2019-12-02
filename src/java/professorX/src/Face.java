@@ -63,7 +63,7 @@ public class Face {
             HttpEntity entity = response.getEntity();
             
             
-            //­åªR JSON ¦^À³
+            //ï¿½ï¿½R JSON ï¿½^ï¿½ï¿½
             if (entity != null)
             {
                 // Format and display the JSON response.
