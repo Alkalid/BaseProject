@@ -1,4 +1,6 @@
 package professorX;
+
+
 //// This sample uses the Apache HTTP client from HTTP Components (http://hc.apache.org/httpcomponents-client-ga/)
 import java.net.URI;
 import org.apache.http.HttpEntity;
@@ -10,7 +12,7 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.util.EntityUtils;
 
-public class Face_Detect 
+public class Face_Identify 
 {
  public static void main(String[] args) 
  {
@@ -18,18 +20,13 @@ public class Face_Detect
 
      try
      {
-    	 String url = "https://images.wealth.com.tw/uploads/article/image/20414/rect_1200_600_%E8%94%A1%E8%8B%B1%E6%96%87_900.jpg";
+    	 String PersonGroupId="test_group";
+    	 String faceIds ="82de1054-4dec-4293-b4ce-82a7691f6af7";
+    	 String maxNumOfCandidatesReturned ="1";
+    	 String confidenceThreshold ="0.5";
+    	
     	 
-    	 
-         URIBuilder builder = new URIBuilder("https://eastasia.api.cognitive.microsoft.com/face/v1.0/detect");
-
-         builder.setParameter("returnFaceId", "true");
-         builder.setParameter("returnFaceLandmarks", "false");
-         //builder.setParameter("returnFaceAttributes", "{string}");
-         builder.setParameter("recognitionModel", "recognition_02");
-         builder.setParameter("returnRecognitionModel", "false");
-         builder.setParameter("detectionModel", "detection_01");
-         //detection_01:普通       detection_02最新
+         URIBuilder builder = new URIBuilder("https://eastasia.api.cognitive.microsoft.com/face/v1.0/identify");
 
          URI uri = builder.build();
          HttpPost request = new HttpPost(uri);
@@ -39,14 +36,14 @@ public class Face_Detect
 
          // Request body
          StringEntity reqEntity = new StringEntity(
-        		 
         		 "{" + 
-        			       
-	         		"    \"url\": \"" + url + "\" " +
-	         		
-	         		"}"
-        		 
-        		 );
+        			         		"    \"PersonGroupId\": \"" + PersonGroupId + "\", " +
+        			         		"    \"faceIds\": [ \"" + faceIds +"\" ], " +
+        			         		"    \"maxNumOfCandidatesReturned\": \"" + maxNumOfCandidatesReturned +"\", " +
+        			         		"    \"confidenceThreshold\": \"" 		 + confidenceThreshold +"\", " +
+        			         		
+        			         		"}"
+        			         		);
          request.setEntity(reqEntity);
 
          HttpResponse response = httpclient.execute(request);
