@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-public class BlankFragment_2 extends Fragment
+public class Fragment_Notification extends Fragment
 {
     View view;
     private MainActivity MA;
@@ -16,7 +16,7 @@ public class BlankFragment_2 extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        view = inflater.inflate(R.layout.fragment_blank_2, container, false);
+        view = inflater.inflate(R.layout.fragment_notification, container, false);
         UMi_Button = (Button)view.findViewById(R.id.button);
         UMi_Button.setOnClickListener(new View.OnClickListener() {
         @Override

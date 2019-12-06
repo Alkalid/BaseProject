@@ -21,8 +21,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public TextView Text = null;
     public Button JAMES;
 
-    private BlankFragment_1 Fragment_1 = null;
-    private BlankFragment_2 Fragment_2 = null;
+    private Fragment_FaceIdentify Fragment_FaceIdentify = null;
+    private Fragment_AddFace Fragment_AddFace = null;
+    private Fragment_Notification Fragment_Notification = null;
     public qrcode_camera qrcode_camera = null;
     private Barcode_camera Barcode_camera = null;
 
@@ -42,14 +43,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         Text = (TextView)findViewById(R.id.MyText);
 
-        Fragment_1 = new BlankFragment_1();
-        Fragment_2 = new BlankFragment_2();
+        Fragment_FaceIdentify = new Fragment_FaceIdentify();
+        Fragment_AddFace = new Fragment_AddFace();
+        Fragment_Notification = new Fragment_Notification();
+
         qrcode_camera = new qrcode_camera();
         Barcode_camera = new Barcode_camera();
 
 
-        Fragment_1.setSource(this);
-        Fragment_2.setSource(this);
+        Fragment_FaceIdentify.setSource(this);
+        Fragment_AddFace.setSource(this);
         qrcode_camera.setSource(this);
         Barcode_camera.setSource(this);
 
@@ -121,16 +124,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (id == R.id.nav_camera)
         {
-            if (!Fragment_1.isAdded())
+            if (!Fragment_FaceIdentify.isAdded())
             {
-                this.getSupportFragmentManager().beginTransaction().replace(R.id.container, Fragment_1).addToBackStack(null).commit();
+                this.getSupportFragmentManager().beginTransaction().replace(R.id.container, Fragment_FaceIdentify).addToBackStack(null).commit();
             }
         }
         else if (id == R.id.nav_gallery)
         {
-            if (!Fragment_2.isAdded())
+            if (!Fragment_AddFace.isAdded())
             {
-                this.getSupportFragmentManager().beginTransaction().replace(R.id.container, Fragment_2).addToBackStack(null).commit();
+                this.getSupportFragmentManager().beginTransaction().replace(R.id.container, Fragment_AddFace).addToBackStack(null).commit();
             }
         }
         else if (id == R.id.nav_slideshow)
