@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         Fragment_FaceIdentify.setSource(this);
         Fragment_AddFace.setSource(this);
+        Fragment_Notification.setSource(this);
         qrcode_camera.setSource(this);
         Barcode_camera.setSource(this);
 
@@ -138,9 +139,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         else if (id == R.id.nav_slideshow)
         {
-            if (!qrcode_camera.isAdded())
+            if (!Fragment_Notification.isAdded())
             {
-                this.getSupportFragmentManager().beginTransaction().replace(R.id.container, qrcode_camera).addToBackStack(null).commit();
+                this.getSupportFragmentManager().beginTransaction().replace(R.id.container, Fragment_Notification).addToBackStack(null).commit();
             }
         }
 
