@@ -75,6 +75,14 @@ public class SocketDemo
 			
 			try
 			{
+				int che5 = 5;
+				int che6 = 6;
+				int che7 = 7;
+				int che8 = 8;
+				int che9 = 9;
+				int che10 = 10;
+				int che15 = 15;
+				
 				// 宣告資料緩衝讀取區
 				reader = new BufferedReader(new InputStreamReader(socket.getInputStream(),"utf8"));
 				// 宣告資料寫出區塊
@@ -109,29 +117,30 @@ public class SocketDemo
 								break;
 							}
 						}
-						if (instruct.equals("getData"))	// 指令判斷
-						{
-							cs.connect();				// 核心運算模組物件啟動資料庫的連線
-							System.out.println("收到的指令是:"+instruct);
-							System.out.println("收到的內容是:"+code);
-							String data = cs.Get(code);
-							
-							System.out.println("從資料庫挖出來的資料是:"+data);
-							
-							// 透過自訂的 sendToTarget() 方法將資料傳送給Client
-							sendToTarget("Data "+data+" ");		
-							isTerminated();		// 關閉Thread
-						}
 						
-						if (instruct.equals("getPoint"))	// 指令判斷
+						
+						if (instruct.equals("CheckIn"))	
 						{
+							
+							System.out.println("CheckIn...1");
 							cs.connect();
+							String[] data = code.split(String.valueOf((char)(che9)));
+							String[] LoginData =cs.checkLoginData(data[0],data[1]).split(" ");
+							if ( LoginData[0].equals("true")   )
+							{
+								//String userInfo=cs.IdInfo(LoginData[1]);
+								//sendToTarget(String.valueOf((char)(che9))+"Check"+String.valueOf((char)(che6))+"Pass"+String.valueOf((char)(che6))+LoginData[1]+String.valueOf((char)(che6))+userInfo+String.valueOf((char)(che6)));
+								
+								sendToTarget(String.valueOf((char)(che9))+"Check"+String.valueOf((char)(che6))+"Pass"+String.valueOf((char)(che6))+LoginData[1]+String.valueOf((char)(che6))  );
+								System.out.println("CheckIn...2");
+							}
+							else
+							{
+								sendToTarget(String.valueOf((char)(che9))+"Check"+String.valueOf((char)(che6))+"Fail"+String.valueOf((char)(che6)));
+							}
+
+							isTerminated();
 							
-							String number = cs.Get(code);
-							
-							// 透過自訂的 sendToTarget() 方法將資料傳送給Client
-							sendToTarget("國哥好帥阿~~ 每天都被自己帥醒~~ XDDD"+number);		
-							isTerminated();		// 關閉Thread
 						}
 						
 						
