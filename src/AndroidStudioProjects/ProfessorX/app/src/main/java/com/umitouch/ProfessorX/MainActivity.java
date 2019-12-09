@@ -40,11 +40,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+        Log.d("TestMain:" , "01 ");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        JAMES = (Button)findViewById(R.id.JAMES);
+
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         qrcode_camera = new qrcode_camera();
         Barcode_camera = new Barcode_camera();
-
+        Fragment_Login = new Fragment_Login();
 
         Fragment_FaceIdentify.setSource(this);
         Fragment_AddFace.setSource(this);
@@ -65,7 +66,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         qrcode_camera.setSource(this);
         Barcode_camera.setSource(this);
         Fragment_Login.setSource(this);
-        CheckLogin();
+        Log.d("TestMain:" , "02 ");
+        //CheckLogin();
     }
 
     public void CallJames(View v)
