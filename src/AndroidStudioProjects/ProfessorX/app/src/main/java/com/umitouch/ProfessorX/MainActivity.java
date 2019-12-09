@@ -64,8 +64,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Fragment_Notification.setSource(this);
         qrcode_camera.setSource(this);
         Barcode_camera.setSource(this);
-
-
+        Fragment_Login.setSource(this);
+        CheckLogin();
     }
 
     public void CallJames(View v)
@@ -230,7 +230,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         else if (id == R.id.nav_send)
         {
-
+            LogOut();
+            this.getSupportFragmentManager().beginTransaction().replace(R.id.container, Fragment_Login).addToBackStack(null).commit();
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
