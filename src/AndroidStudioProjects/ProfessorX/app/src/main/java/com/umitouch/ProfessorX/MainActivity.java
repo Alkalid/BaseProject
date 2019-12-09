@@ -1,6 +1,7 @@
 package com.umitouch.ProfessorX;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -24,8 +25,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private Fragment_FaceIdentify Fragment_FaceIdentify = null;
     private Fragment_AddFace Fragment_AddFace = null;
     private Fragment_Notification Fragment_Notification = null;
+    private Fragment_Login Fragment_Login = null;
     public qrcode_camera qrcode_camera = null;
     private Barcode_camera Barcode_camera = null;
+
+    private Boolean LogIning = false;
+    public String UID;
+    public String UserName;
+    public String Account;
+
 
     private MainClient MC;
     private String SocketInstruct = "";
@@ -65,6 +73,68 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         this.SocketInstruct = "qrcodeTest ";
         Log.d("socketTest", "CallJames: ");
         connect();
+    }
+
+    public void SetUserData()   //初次登入  設定登入資料 這樣下次就能自動登入
+    {
+        LogIning = true;
+        //qrcode_camera.UID=UID;
+
+        ShowUserData();
+        SharedPreferences userInfo = getSharedPreferences("data", MODE_PRIVATE);
+        SharedPreferences.Editor editor = userInfo.edit();
+        editor.putString("UserID", UID);
+        editor.putString("UserName",   UserName  );
+        editor.putString("UserAccount",   Account  );
+        editor.commit();
+        Log.d("TestMain:" , "保存用户資訊");
+        //this.getSupportFragmentManager().beginTransaction().hide(qrcode_camera).hide(Fragment_Login).hide(Fragment_1).addToBackStack(null).commit();
+        //this.getSupportFragmentManager().beginTransaction().replace(R.id.container, qrcode_camera).addToBackStack(null).commit();
+    }
+    private void ShowUserData()//設定左邊選單的用戶資料
+    {
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        View headerView = navigationView.getHeaderView(0);
+        TextView UserName = (TextView) headerView.findViewById(R.id.UserName);
+        TextView UserAccount = (TextView) headerView.findViewById(R.id.UserAccount);
+        UserName.setText(this.UserName);
+        UserAccount.setText(this.Account);
+    }
+    private void LogOut()
+    {
+        //getSupportActionBar().setTitle("登入");
+        LogIning = false;
+        SharedPreferences userInfo = getSharedPreferences("data", MODE_PRIVATE);
+        SharedPreferences.Editor editor = userInfo.edit();//获取Editor
+        //得到Editor后，写入需要保存的数据
+        editor.putString("UserID", null);
+        editor.commit();//提交修改
+        Log.d("TestMain:" , "登出");
+    }
+
+    public void CheckLogin()      //先取得登入資料
+    {
+        SharedPreferences userInfo = getSharedPreferences("data", MODE_PRIVATE);
+        String UserID = userInfo.getString("UserID", null);//读取username
+        String UserName = userInfo.getString("UserName", null);//读取username
+        String Account = userInfo.getString("UserAccount", null);//读取username
+
+        if(UserID == null)  //沒登入 跳轉登入頁面
+        {
+            //getSupportActionBar().setTitle("登入");
+            Log.d("TestMain:" , "change to login");
+            this.getSupportFragmentManager().beginTransaction().add(R.id.container, Fragment_Login).addToBackStack(null).commit();
+
+        }
+        else //登入
+        {
+            Log.d("TestMain:" , "用戶已登入 "+UserID+"   "+UserName);
+            this.UID = UserID;
+            this.UserName = UserName;
+            this.Account = Account;
+            ShowUserData();
+            LogIning=true;
+        }
     }
 
 
