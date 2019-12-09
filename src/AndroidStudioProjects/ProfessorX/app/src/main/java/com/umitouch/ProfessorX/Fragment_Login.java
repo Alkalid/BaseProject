@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 package com.umitouch.ProfessorX;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-=======
-package com.umitouch.mysample;
+
 
 import android.accounts.Account;
 import android.os.Bundle;
@@ -12,17 +10,13 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.util.Log;
->>>>>>> master
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
-<<<<<<< HEAD
-=======
 import android.widget.TextView;
->>>>>>> master
 import android.widget.Toast;
 
 
@@ -96,18 +90,10 @@ public class Fragment_Login extends Fragment
         MA.Account = Account.getText().toString();
         MA.SetUserData();
 
-<<<<<<< HEAD
-=======
-        if(MA.Fragment_1.isAdded())
-        {
-            MA.Fragment_1.frag1.init();
-        }
-        if(MA.qrcode_camera.isAdded())
-        {
-            MA.qrcode_camera.init();
-        }
 
->>>>>>> master
+
+
+
 
     }
     public void Fail()
