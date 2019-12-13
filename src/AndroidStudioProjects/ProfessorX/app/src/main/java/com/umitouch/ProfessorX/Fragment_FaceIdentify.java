@@ -28,6 +28,10 @@ public class Fragment_FaceIdentify extends Fragment
         return view;
     }
 
+
+
+
+
     public void setSource(MainActivity MA)
     {
         this.MA = MA;

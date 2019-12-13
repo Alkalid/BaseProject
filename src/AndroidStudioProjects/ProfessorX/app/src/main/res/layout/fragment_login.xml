@@ -37,7 +37,7 @@
         android:layout_height="match_parent"
         android:layout_centerVertical="true"
         android:gravity="top
-"
+"       android:visibility="visible"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
@@ -48,7 +48,8 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_below="@+id/textView"
-             />
+
+            />
 
         <EditText
             android:id="@+id/id"
@@ -71,9 +72,9 @@
             android:ems="10"
             android:hint="密碼"
             android:inputType="textPassword"
-            android:text="aaa"
+            android:text=""
             android:layout_below="@+id/imageView"
-             />
+            />
 
         <Button
             android:id="@+id/Login_Button"

@@ -20,6 +20,8 @@
             android:layout_height="60dp"
             android:text="Fragment_2" />
 
+        <!--     -->
+
         <Button
             android:id="@+id/button"
             android:layout_width="187dp"
@@ -28,4 +30,7 @@
             />
 
     </LinearLayout>
+
+
+
 </FrameLayout>
