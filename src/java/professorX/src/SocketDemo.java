@@ -17,7 +17,7 @@ public class SocketDemo
 	{
 		try					// Java 的例外處理
 		{
-			server = new ServerSocket(9453); 	// 設定Server port
+			server = new ServerSocket(5251); 	// 設定Server port
 			System.out.println("Network Deploy Service Server�Ұ�...");
 			while(true)
 			{
@@ -128,10 +128,10 @@ public class SocketDemo
 							String[] LoginData =cs.checkLoginData(data[0],data[1]).split(" ");
 							if ( LoginData[0].equals("true")   )
 							{
-								//String userInfo=cs.IdInfo(LoginData[1]);
-								//sendToTarget(String.valueOf((char)(che9))+"Check"+String.valueOf((char)(che6))+"Pass"+String.valueOf((char)(che6))+LoginData[1]+String.valueOf((char)(che6))+userInfo+String.valueOf((char)(che6)));
+								String userInfo=cs.IdInfo(LoginData[1]);
+								sendToTarget(String.valueOf((char)(che9))+"Check"+String.valueOf((char)(che6))+"Pass"+String.valueOf((char)(che6))+LoginData[1]+String.valueOf((char)(che6))+userInfo+String.valueOf((char)(che6)));
 								
-								sendToTarget(String.valueOf((char)(che9))+"Check"+String.valueOf((char)(che6))+"Pass"+String.valueOf((char)(che6))+LoginData[1]+String.valueOf((char)(che6))  );
+								//sendToTarget(String.valueOf((char)(che9))+"Check"+String.valueOf((char)(che6))+"Pass"+String.valueOf((char)(che6))+LoginData[1]+String.valueOf((char)(che6))  );
 								System.out.println("CheckIn...2");
 							}
 							else
@@ -142,6 +142,9 @@ public class SocketDemo
 							isTerminated();
 							
 						}
+						
+						
+						
 						
 						
 					}

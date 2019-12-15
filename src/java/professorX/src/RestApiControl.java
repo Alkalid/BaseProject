@@ -19,17 +19,17 @@ public class RestApiControl
 	
 	public void face_identify()
 	{
-		String url = "https://www.itsfun.com.tw/cacheimg/46/79/594df3427a4638e69b565972152e.jpg"; //
+		String url = "http://114.35.11.36/IMG_20190701_101113.jpg"; //
 		
 		
 		Face_Detect Detect = new Face_Detect();
 		String faceId = Detect.Face_Detect(url);
 		faceId = faceId.substring(1, faceId.length() -1 );
-		System.out.println("string faceId: "+ faceId );
+		//System.out.println("string faceId: "+ faceId );
 		
 		JSONObject result = new JSONObject(faceId);
 		
-		System.out.println("faceId: "+result.getString("faceId"));
+		//System.out.println("faceId: "+result.getString("faceId"));
 		faceId = result.getString("faceId");
 		
 		
@@ -39,7 +39,7 @@ public class RestApiControl
 		
 		String personId =Identify.Face_Identify(faceId);
 		personId = personId.substring(1, personId.length() -1 );
-		System.out.println("personId : " + personId );
+		//System.out.println("personId : " + personId );
 		
 		//JSONObject IdentifyResult = new JSONObject(personId);
 /////////////////////////////////////////////////////////////////////

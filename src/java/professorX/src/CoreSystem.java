@@ -112,6 +112,30 @@ class CoreSystem
 		return lock+" "+uid;
 	}
 	
+	public String IdInfo(String uid)		 //嚙踝蕭謕蕭豲��嚙踝����蕭��嚙踝蕭謕蕭豲��嚙踐�蕭��蕭謕蕭豲��嚙踝����蕭��嚙踝蕭謕蕭豲��嚙踝�揭
+	{
+		String Info = "";
+		
+		try
+		{
+			ResultSet rs;
+			Statement stm = con_Demo.createStatement();	
+			
+			rs = stm.executeQuery("select account.* from account where account.uid = '"+uid+"' ");
+			while(rs.next())
+			{ 
+				String name = rs.getString("name")+String.valueOf((char)(8));
+				Info = name;
+			}
+			stm.close();
+		}
+		catch (Exception exe)
+		{
+			System.out.println("getInfo Exception " +exe.getMessage());
+		}		
+		return Info;
+	}
+	
 	
 	public String Get(String id)		// 嚙踝蕭謘潘蕭謅蕭�嚙踝蕭
 	{

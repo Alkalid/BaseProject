@@ -1,15 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
 MERGED from [com.android.support:design:27.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\06de0ad0b62168836b07b057b596312c\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\debca9d5bcbab071dedaa937443d403f\AndroidManifest.xml:17:1-22:12
 MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:17:1-55:12
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\ef8ca50e7b7aae144aea86f80b35a6c8\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e03e5124b128e1baf5d7eda84cba4461\AndroidManifest.xml:2:1-11:12
 MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\b95b805b74e656c6288ecd1da613d2fa\AndroidManifest.xml:17:1-30:12
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.1.17.aar\73be9be9b24b1025dbc4217ccf7576a5\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\11f1a47742074c90c36e7277aa8e033d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\5e20c5ec9f3b6f44c553d1d1d3eb296c\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\bceaaad5bebf2e4f98daff4b947dd25e\AndroidManifest.xml:17:1-22:12
@@ -24,51 +25,51 @@ MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\kartd\.gradle\cache
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\4016938b370a628834dd590be893beaa\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\268a56b3b25ce9439c12023f151e99da\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\7620b50ddde4993b5e3ce7eaca79b17d\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
 	package
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:3:5-38
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:3:5-38
+		INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+		INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+		INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:4:5-66
+ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:4:5-66
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:4:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:5:5-78
+ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:5:5-78
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:5:22-76
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:5:22-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:6:5-78
+ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:6:5-78
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:6:22-76
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:7:5-80
+ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:7:22-78
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:7:22-78
 uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:8:5-88
+ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:8:5-88
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:8:22-86
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:8:22-86
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:11:5-64
+ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:11:5-64
 MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:21:5-65
 MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:21:5-65
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:11:22-62
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:11:22-62
 application
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:13:5-33:19
+ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:13:5-33:19
 MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:45:5-53:19
 MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:45:5-53:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e03e5124b128e1baf5d7eda84cba4461\AndroidManifest.xml:9:5-20
@@ -76,45 +77,45 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ka
 MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\b95b805b74e656c6288ecd1da613d2fa\AndroidManifest.xml:22:5-28:19
 MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\b95b805b74e656c6288ecd1da613d2fa\AndroidManifest.xml:22:5-28:19
 	android:supportsRtl
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:16:9-41
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:16:9-41
 	android:roundIcon
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:17:9-54
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:17:9-54
 	android:icon
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:15:9-43
 	android:allowBackup
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:19:9-40
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:19:9-40
 activity#com.umitouch.ProfessorX.MainActivity
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:20:9-30:20
+ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:20:9-30:20
 	android:label
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:23:13-45
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:23:13-45
 	android:configChanges
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:21:13-63
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:21:13-63
 	android:theme
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:24:13-56
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:24:13-56
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:22:13-64
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:22:13-64
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:25:13-29:29
+ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:26:17-69
+ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:26:25-66
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:28:17-77
+ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:28:27-74
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:28:27-74
 activity#com.umitouch.ProfessorX.qrcode_camera
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:31:9-32:20
+ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:31:9-32:20
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:31:19-71
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:31:19-71
 uses-sdk
-INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 MERGED from [com.android.support:design:27.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\06de0ad0b62168836b07b057b596312c\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:27.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\06de0ad0b62168836b07b057b596312c\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\debca9d5bcbab071dedaa937443d403f\AndroidManifest.xml:20:5-44
@@ -127,6 +128,8 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ka
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e03e5124b128e1baf5d7eda84cba4461\AndroidManifest.xml:5:5-7:41
 MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\b95b805b74e656c6288ecd1da613d2fa\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\b95b805b74e656c6288ecd1da613d2fa\AndroidManifest.xml:20:5-44
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.1.17.aar\73be9be9b24b1025dbc4217ccf7576a5\AndroidManifest.xml:7:5-9:41
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.1.17.aar\73be9be9b24b1025dbc4217ccf7576a5\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\11f1a47742074c90c36e7277aa8e033d\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\11f1a47742074c90c36e7277aa8e033d\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\5e20c5ec9f3b6f44c553d1d1d3eb296c\AndroidManifest.xml:20:5-44
@@ -155,16 +158,16 @@ MERGED from [android.arch.core:runtime:1.1.1] C:\Users\kartd\.gradle\caches\tran
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\268a56b3b25ce9439c12023f151e99da\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\7620b50ddde4993b5e3ce7eaca79b17d\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\7620b50ddde4993b5e3ce7eaca79b17d\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		ADDED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		INJECTED from D:\RepoGitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 uses-feature#android.hardware.camera
 ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:24:5-26:36
 	android:required

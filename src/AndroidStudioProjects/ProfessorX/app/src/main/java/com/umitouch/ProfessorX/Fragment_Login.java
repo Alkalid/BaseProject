@@ -105,7 +105,7 @@ public class Fragment_Login extends Fragment
     {
         DataSocket = new Client_Login();
         DataSocket.setSource(this);
-        DataSocket.SocketInstruct = "CheckIn "+Account+String.valueOf((char)(che9))+Password+String.valueOf((char)(che9)) ;
+        DataSocket.SocketInstruct = "CheckIn "+Account+String.valueOf((char)(che9))+Password+String.valueOf((char)(che9))+" 1"  + String.valueOf((char)(che9));
         DataSocket.start();
     }
 }

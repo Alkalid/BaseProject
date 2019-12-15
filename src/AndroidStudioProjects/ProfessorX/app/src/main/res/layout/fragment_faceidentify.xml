@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFFFFF"
     tools:context=".Fragment_FaceIdentify">
 
@@ -15,16 +16,19 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
-        <TextView
+        <pl.droidsonroids.gif.GifImageView
             android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:text="Fragment_1" />
+            android:layout_height="300dp"
+            android:src="@drawable/searchicongifanimation2031289553375"
+         />
+
+
 
         <Button
             android:id="@+id/button"
             android:layout_width="187dp"
             android:layout_height="wrap_content"
-            android:text="修改字串"
+            android:text="開始辨識"
             />
 
     </LinearLayout>
