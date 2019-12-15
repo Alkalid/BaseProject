@@ -61,7 +61,11 @@ public class Client_FaceIdentify extends Thread
     {
         String[] SData = str.split(String.valueOf((char)(che9)))[1].split(String.valueOf((char)(che6)));
 
+        if (SData[0].equals("Identify"))
+        {
+            
 
+        }
 
     }
 

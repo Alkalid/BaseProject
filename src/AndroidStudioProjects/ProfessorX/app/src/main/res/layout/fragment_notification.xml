@@ -22,7 +22,6 @@
 
         <Button
             android:id="@+id/button"
-
             android:layout_width="187dp"
             android:layout_height="wrap_content"
             android:text="修改字串"

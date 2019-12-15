@@ -20,6 +20,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 
 import com.android.internal.http.multipart.MultipartEntity;
 import com.loopj.android.http.AsyncHttpClient;
@@ -56,6 +58,13 @@ public class Fragment_FaceIdentify extends Fragment {
     private Client_FaceIdentify DataSocket ;
     private Button UMi_Button;
 
+    private EditText URL_EditText;
+
+    private LinearLayout Main_LinerLayout;
+    private LinearLayout Searching_LinerLayout;
+
+    private String UID;
+    private String URL;
     private String accessToken;
     private String refreshToken;
 
@@ -68,13 +77,18 @@ public class Fragment_FaceIdentify extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         view = inflater.inflate(R.layout.fragment_faceidentify, container, false);
+        Main_LinerLayout = (LinearLayout) view.findViewById(R.id.Main_LinerLayout);
+        Searching_LinerLayout = (LinearLayout) view.findViewById(R.id.Searching_LinerLayout);
+        URL_EditText = (EditText) view.findViewById(R.id.URL_EditText);
         UMi_Button = (Button) view.findViewById(R.id.button);
         UMi_Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MA.setData("from Fragment_1");
+                StartIdentify();
             }
         });
+
+
 
         init();
         return view;
@@ -85,14 +99,40 @@ public class Fragment_FaceIdentify extends Fragment {
         this.MA = MA;
     }
 
+    public void init()
+    {
+        UID = MA.UID;
+    }
 
-    public void CheckIn(String Account, String Password)
+    public void StartIdentify()
+    {
+        Log.d("TestIdentify:" , "StartIdentify ");
+        Main_LinerLayout.setVisibility(View.GONE);
+        Searching_LinerLayout.setVisibility(View.VISIBLE);
+        URL = URL_EditText.getText().toString();
+        Identify( URL );
+    }
+
+    public void IdentifySuccess( )
+    {
+
+    }
+
+    public void IdentifyFail( )
+    {
+
+    }
+
+
+    public void Identify(String URL )
     {
         DataSocket = new Client_FaceIdentify();
         DataSocket.setSource(this);
-        DataSocket.SocketInstruct = "CheckIn "+Account+String.valueOf((char)(che9))+Password+String.valueOf((char)(che9))+" 1"  + String.valueOf((char)(che9));
+        DataSocket.SocketInstruct = "Identify "+UID+String.valueOf((char)(che9))+URL+String.valueOf((char)(che9)) ;
         DataSocket.start();
     }
+
+
     /*private void getSelectImage(Intent data){
         //從 onActivityResult 傳入的data中，取得圖檔路徑
         Uri selectedImage = data.getData();
@@ -212,7 +252,7 @@ public class Fragment_FaceIdentify extends Fragment {
         int start = mTextEditText.getSelectionStart();
         mTextEditText.getText().insert(start, insertString);
     }*/
-    public void init()
+    public void TRANSFER()
     {
         //Bitmap photo = (Bitmap) data.getExtras().get("data");
 
