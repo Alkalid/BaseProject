@@ -25,7 +25,10 @@ class CoreSystem
 	
 	private String Demo_SQLServerIP = "127.0.0.1";	// ��嚙踐��P���蕭
 	private String Demo_SQLServerName = "professorx";		// ��嚙踐��蕭嚙踝���
-		
+	
+	
+	LinkedList SendPackage;
+	boolean SendLock;
 	public CoreSystem()
 	{
 		
@@ -228,34 +231,65 @@ class CoreSystem
 	
 	public String getIdentify(String URL)		
 	{
-		String data = "";
+		SendPackage = new LinkedList();
+		SendLock = false;
+		String State = "";
+		String DataSuite = "";
 		int che6 = 6;
 		try
 		{
+			
 			String PersonData = "";
 			RestApiControl AC = new RestApiControl() ;
 			LinkedList Identify_result = AC.face_identify( URL ); // 1.fail/succ  2.personId   3.confidence
 			
 			if(Identify_result.get(0).equals("fail")) 
 			{
-				data="fail"+String.valueOf((char)(che6));
+				DataSuite="fail"+String.valueOf((char)(che6));
+				State="fail";
 			}
+			
 			else if(Identify_result.get(0).equals("success")) 
 			{
-				
-				data="success"+String.valueOf((char)(che6)) ;
 				System.out.println("getPersonIdData");
 				PersonData = getPersonIdData( Identify_result.get(1).toString() );	
+				System.out.println("\n"+PersonData );
+				State="success";
+				DataSuite="success"+String.valueOf((char)(che6))+PersonData;
+				SendLock = true;
+				
 			}
 			
 			
+			while (true)//	 Total data
+			{
+				int Max = 500;
+				String Data = "";
+				while(true)	// Package
+				{
+					String reg = HalfSort(DataSuite,Max);
+					Max -= reg.getBytes().length;
+					DataSuite = DataSuite.substring(reg.length(), DataSuite.length());
+					Data += reg;
+					if (Max < 10 || reg.getBytes().length == 0)
+					{
+						SendPackage.add(Data);
+						break;
+					}
+				}
+				
+				if (DataSuite.getBytes().length == 0)
+				{
+					break;
+				}
+			}
 		}
 		catch (Exception exe)
 		{
 			System.out.println("getIdentify Exception : "+exe.getMessage());
 		}
+		return State;
 		
-		return data;
 	}
 	
 	public String getPersonIdData(String personId )		
@@ -264,19 +298,16 @@ class CoreSystem
 		int che6 = 6;
 		try
 		{
-			
 			ResultSet rs;
 			Statement stm = con_Demo.createStatement();	
 			rs = stm.executeQuery("select person.* from person where person.person_id = '"+personId+"'");	
 			while(rs.next())
 			{ 
-				System.out.println(rs.getString("person_name"));
-				System.out.println(rs.getString("person_fb"));
-				System.out.println(rs.getString("person_ig"));
+				//System.out.println(rs.getString("person_name"));
+				//System.out.println(rs.getString("person_fb"));
+				//System.out.println(rs.getString("person_ig"));
 				
-				
-				data = rs.getString("person_name")+String.valueOf((char)(che6))+rs.getString("person_fb")+String.valueOf((char)(che6))+rs.getString("person_ig");
-				System.out.println("\n"+data );
+				data = rs.getString("person_name")+String.valueOf((char)(che6))+rs.getString("person_fb")+String.valueOf((char)(che6))+rs.getString("person_ig")+String.valueOf((char)(che6))+rs.getString("person_info");
 			}
 			stm.close();
 			
@@ -285,7 +316,7 @@ class CoreSystem
 		}
 		catch (Exception exe)
 		{
-			System.out.println("getIdentifyData Exception : "+exe.getMessage());
+			System.out.println("getPersonIdData Exception : "+exe.getMessage());
 		}
 		
 		return data;
@@ -473,5 +504,30 @@ class CoreSystem
 			}
 		}
 		return code;
+	}
+	
+	public String HalfSort(String Sequence_, int Max)
+	{
+		String Sequence = Sequence_;
+		
+		if (Sequence.getBytes().length > Max)
+		{
+			while(true)
+			{
+				String Half = Sequence.substring(0,Sequence.length()/2);
+				
+				if (Half.getBytes().length > Max)
+				{
+					Sequence = Half.substring(0,Half.length()/2);
+				}
+				else
+				{
+					Sequence = Half;
+					break;
+				}
+			}
+		}		
+			
+		return Sequence;
 	}
 }
