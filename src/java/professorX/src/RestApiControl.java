@@ -4,7 +4,8 @@ import org.apache.http.util.EntityUtils;
 import java.util.LinkedList;
 
 import professorX.Face_Detect;
-
+import professorX.PersonGroupPerson_Create;
+import professorX.PersonGroupPerson_AddFace;
 public class RestApiControl 
 {
 	
@@ -14,7 +15,9 @@ public class RestApiControl
 	{
 		RestApiControl rc = new RestApiControl();
 		
-		//rc.face_identify();
+		//rc.face_identify("https://upload.wikimedia.org/wikipedia/commons/1/1b/%E8%94%A1%E8%8B%B1%E6%96%87%E5%AE%98%E6%96%B9%E5%85%83%E9%A6%96%E8%82%96%E5%83%8F%E7%85%A7.png");
+		//rc.CreatePerson("kate", "testt");
+		rc.Person_Add("420c5d9a-7782-461c-84e4-9230b670ad00", "https://i1.kknews.cc/SIG=q1bdt6/31r800021129r958q850.jpg");
 	}
 	
 	public LinkedList face_identify(String url )
@@ -29,7 +32,7 @@ public class RestApiControl
 		Face_Detect Detect = new Face_Detect();
 		String faceId = Detect.Face_Detect(url);
 		faceId = faceId.substring(1, faceId.length() -1 );
-		//System.out.println("string faceId: "+ faceId );
+		System.out.println("string faceId: "+ faceId );
 		
 		JSONObject result = new JSONObject(faceId);
 		
@@ -69,6 +72,32 @@ public class RestApiControl
 		}
 		
 		return Identify_result;
+	}
+	
+	public String CreatePerson (String name ,String userData )
+	{
+		String personId;
+		PersonGroupPerson_Create Person_Create = new PersonGroupPerson_Create();
+		String CreateResult = Person_Create.Person_Create(name, userData);
+		JSONObject result = new JSONObject(CreateResult);
+		personId = result.get("personId").toString();
+		
+		
+		System.out.println( CreateResult  );
+		System.out.println( "personId:  "+personId  );
+		return personId;
+	}
+	
+	public String Person_Add (String Person_id ,String url )
+	{
+		String persistedFaceId;
+		PersonGroupPerson_AddFace Person_Add = new PersonGroupPerson_AddFace();
+		String AddResult = Person_Add.Person_Addface(Person_id, url);
+		JSONObject result = new JSONObject(AddResult);
+		persistedFaceId = result.get("persistedFaceId").toString();
+		
+		System.out.println( persistedFaceId  );
+		return persistedFaceId;
 	}
 	
 	
