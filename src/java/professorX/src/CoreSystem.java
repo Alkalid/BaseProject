@@ -12,8 +12,11 @@ import java.security.Security;
 import java.sql.*;    
 import java.io.Console;
 
+
 class CoreSystem
 {
+	
+	
 	
 	private Connection con_Demo ;					// ��嚙踐��蕭嚙質謍莎��蕭
 	
@@ -86,6 +89,63 @@ class CoreSystem
 		}
 	}
 	
+	public void CreatePerson(String URL,String person_name,String person_fb,String person_ig ,String person_info) 	// 嚙踐��筆嚙踝嚙踝蕭
+	{		
+		String person_id;
+		String face_id;
+		try
+		{							
+			
+			
+			
+			
+			
+			
+		}
+		catch (Exception exe)
+		{
+			System.out.println("NewPerson Exception : "+exe.getMessage());
+		}
+	}
+	
+	public void NewPerson(String person_id,String person_name,String person_fb,String person_ig ,String person_info) 	// 嚙踐��筆嚙踝嚙踝蕭
+	{		
+		try
+		{							
+			PreparedStatement patmt_NDS = con_Demo.prepareStatement("insert into person values(?,?,?,?,?)");
+			
+			patmt_NDS.setString(1,person_id);
+			patmt_NDS.setString(2,person_name);
+			patmt_NDS.setString(3,person_fb);
+			patmt_NDS.setString(4,person_ig);
+			patmt_NDS.setString(5, person_info);
+			patmt_NDS.executeUpdate();
+			patmt_NDS.close();		
+		}
+		catch (Exception exe)
+		{
+			System.out.println("NewPerson Exception : "+exe.getMessage());
+		}
+	}
+	
+	public void NewPersonFace(String person_id,String face_id) 	// 嚙踐��筆嚙踝嚙踝蕭
+	{		
+		try
+		{							
+			PreparedStatement patmt_NDS = con_Demo.prepareStatement("insert into person_face values(?,?)");
+			
+			patmt_NDS.setString(1,person_id);
+			patmt_NDS.setString(2,face_id);
+			
+			patmt_NDS.executeUpdate();
+			patmt_NDS.close();		
+		}
+		catch (Exception exe)
+		{
+			System.out.println("NewPerson Exception : "+exe.getMessage());
+		}
+	}
+	
 	public String checkLoginData(String Account, String pw)
 	{
 		String lock = "false";
@@ -136,6 +196,66 @@ class CoreSystem
 		return Info;
 	}
 	
+	public String getIdentify(String URL)		
+	{
+		String data = "";
+		int che6 = 6;
+		try
+		{
+			
+			RestApiControl AC = new RestApiControl() ;
+			LinkedList Identify_result = AC.face_identify( URL );
+			
+			if(Identify_result.get(0).equals("fail")) 
+			{
+				data="fail"+String.valueOf((char)(che6));
+			}
+			else if(Identify_result.get(0).equals("success")) 
+			{
+				data="success"+String.valueOf((char)(che6)) ;
+			}
+			
+			
+		}
+		catch (Exception exe)
+		{
+			System.out.println("getIdentify Exception : "+exe.getMessage());
+		}
+		
+		return data;
+	}
+	
+	public String getPersonIdData(String personId )		
+	{
+		String data = "";
+		int che6 = 6;
+		try
+		{
+			
+			ResultSet rs;
+			Statement stm = con_Demo.createStatement();	
+			rs = stm.executeQuery("select person.* from person where person.person_id = '"+personId+"'");	
+			while(rs.next())
+			{ 
+				System.out.println(rs.getString("person_name"));
+				System.out.println(rs.getString("person_fb"));
+				System.out.println(rs.getString("person_ig"));
+				
+				
+				data = rs.getString("person_name")+String.valueOf((char)(che6))+rs.getString("person_fb")+String.valueOf((char)(che6))+rs.getString("person_ig");
+			}
+			stm.close();
+			
+			
+			
+		}
+		catch (Exception exe)
+		{
+			System.out.println("getIdentifyData Exception : "+exe.getMessage());
+		}
+		
+		return data;
+	}
 	
 	public String Get(String id)		// 嚙踝蕭謘潘蕭謅蕭�嚙踝蕭
 	{
