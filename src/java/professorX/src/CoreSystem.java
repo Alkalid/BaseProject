@@ -89,15 +89,20 @@ class CoreSystem
 		}
 	}
 	
-	public void CreatePerson(String URL,String person_name,String person_fb,String person_ig ,String person_info) 	// 嚙踐��筆嚙踝嚙踝蕭
+	public void CreatePerson(String URL,String person_name,String person_fb,String person_ig ,String person_info ,String uid) 	// 嚙踐��筆嚙踝嚙踝蕭
 	{		
 		String person_id;
 		String face_id;
 		try
 		{							
-			
-			
-			
+			RestApiControl AC = new RestApiControl() ;
+			if(1 == 1) // URL is a image
+			{
+				person_id = AC.CreatePerson(person_name, person_info);
+				face_id   = AC.Person_Add(person_id, URL);
+			}
+			NewPerson(person_id , person_name ,person_fb , person_ig , person_info , uid );
+			NewPersonFace(person_id , face_id , URL);
 			
 			
 			
@@ -108,17 +113,18 @@ class CoreSystem
 		}
 	}
 	
-	public void NewPerson(String person_id,String person_name,String person_fb,String person_ig ,String person_info) 	// 嚙踐��筆嚙踝嚙踝蕭
+	public void NewPerson(String person_id,String person_name,String person_fb,String person_ig ,String person_info ,String uid) 	// 嚙踐��筆嚙踝嚙踝蕭
 	{		
 		try
 		{							
-			PreparedStatement patmt_NDS = con_Demo.prepareStatement("insert into person values(?,?,?,?,?)");
+			PreparedStatement patmt_NDS = con_Demo.prepareStatement("insert into person values(?,?,?,?,?,?)");
 			
 			patmt_NDS.setString(1,person_id);
 			patmt_NDS.setString(2,person_name);
 			patmt_NDS.setString(3,person_fb);
 			patmt_NDS.setString(4,person_ig);
-			patmt_NDS.setString(5, person_info);
+			patmt_NDS.setString(5,person_info);
+			patmt_NDS.setString(6,uid);
 			patmt_NDS.executeUpdate();
 			patmt_NDS.close();		
 		}
@@ -128,15 +134,15 @@ class CoreSystem
 		}
 	}
 	
-	public void NewPersonFace(String person_id,String face_id) 	// 嚙踐��筆嚙踝嚙踝蕭
+	public void NewPersonFace(String person_id,String face_id, String url) 	// 嚙踐��筆嚙踝嚙踝蕭
 	{		
 		try
 		{							
-			PreparedStatement patmt_NDS = con_Demo.prepareStatement("insert into person_face values(?,?)");
+			PreparedStatement patmt_NDS = con_Demo.prepareStatement("insert into person_face values(?,?,?)");
 			
 			patmt_NDS.setString(1,person_id);
 			patmt_NDS.setString(2,face_id);
-			
+			patmt_NDS.setString(3,url);
 			patmt_NDS.executeUpdate();
 			patmt_NDS.close();		
 		}
