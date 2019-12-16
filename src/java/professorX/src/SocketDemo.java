@@ -143,6 +143,30 @@ public class SocketDemo
 							
 						}
 						
+						if (instruct.equals("Identify"))	
+						{
+							
+							System.out.println("CheckIn...1");
+							cs.connect();
+							String[] data = code.split(String.valueOf((char)(che9)));
+							
+							if ( 1  ==1 )
+							{
+								sendToTarget( String.valueOf((char)(che9)) +"Identify_start" + String.valueOf((char)(che6))   );
+								//sendToTarget(String.valueOf((char)(che9))+"Check"+String.valueOf((char)(che6))+"Pass"+String.valueOf((char)(che6))+LoginData[1]+String.valueOf((char)(che6))+userInfo+String.valueOf((char)(che6)));
+								
+								//sendToTarget(String.valueOf((char)(che9))+"Check"+String.valueOf((char)(che6))+"Pass"+String.valueOf((char)(che6))+LoginData[1]+String.valueOf((char)(che6))  );
+								System.out.println("CheckIn...2");
+							}
+							else
+							{
+								sendToTarget( String.valueOf((char)(che9)) +"Identify_fail" + String.valueOf((char)(che6))   );
+							}
+
+							isTerminated();
+							
+						}
+						
 						
 						
 						

@@ -89,7 +89,62 @@ class CoreSystem
 		}
 	}
 	
+	public void CreatePerson(String URL,String person_name,String person_fb,String person_ig ,String person_info) 	// 嚙踐��筆嚙踝嚙踝蕭
+	{		
+		String person_id;
+		String face_id;
+		try
+		{							
+			
+			
+			
+			
+			
+			
+		}
+		catch (Exception exe)
+		{
+			System.out.println("NewPerson Exception : "+exe.getMessage());
+		}
+	}
 	
+	public void NewPerson(String person_id,String person_name,String person_fb,String person_ig ,String person_info) 	// 嚙踐��筆嚙踝嚙踝蕭
+	{		
+		try
+		{							
+			PreparedStatement patmt_NDS = con_Demo.prepareStatement("insert into person values(?,?,?,?,?)");
+			
+			patmt_NDS.setString(1,person_id);
+			patmt_NDS.setString(2,person_name);
+			patmt_NDS.setString(3,person_fb);
+			patmt_NDS.setString(4,person_ig);
+			patmt_NDS.setString(5, person_info);
+			patmt_NDS.executeUpdate();
+			patmt_NDS.close();		
+		}
+		catch (Exception exe)
+		{
+			System.out.println("NewPerson Exception : "+exe.getMessage());
+		}
+	}
+	
+	public void NewPersonFace(String person_id,String face_id) 	// 嚙踐��筆嚙踝嚙踝蕭
+	{		
+		try
+		{							
+			PreparedStatement patmt_NDS = con_Demo.prepareStatement("insert into person_face values(?,?)");
+			
+			patmt_NDS.setString(1,person_id);
+			patmt_NDS.setString(2,face_id);
+			
+			patmt_NDS.executeUpdate();
+			patmt_NDS.close();		
+		}
+		catch (Exception exe)
+		{
+			System.out.println("NewPerson Exception : "+exe.getMessage());
+		}
+	}
 	
 	public String checkLoginData(String Account, String pw)
 	{
