@@ -36,7 +36,10 @@ class CoreSystem
 		CoreSystem cs = new CoreSystem();
 		cs.connect();
 		//cs.NewAccount("kartd80165", "ddaa3732", "kartd80165@gmail.com");
-		cs.checkLoginData("kartd80165", "ddaa3732");
+		//cs.checkLoginData("kartd80165", "ddaa3732");
+		//cs.CreatePerson("https://images.chinatimes.com/newsphoto/2019-05-17/900/20190517003816.jpg" , "馬英九" ,"https://www.facebook.com/MaYingjeou","https://www.instagram.com/ma_yingjeou/?hl=zh-tw","台灣前總統","uml1uYPeVTUJU" );
+		cs.getIdentify("https://storage.googleapis.com/www-cw-com-tw/article/201812/article-5c29b03176521.jpg");
+		//cs.Person_AddFace("d2caae92-782a-45d4-b1d9-e0d919ef1bf7","https://storage.googleapis.com/www-cw-com-tw/article/201812/article-5c29b03176521.jpg","uml1uYPeVTUJU" );
 	}
 	
 	public void connect()	// ��嚙踐��蕭嚙質謍堆蕭賹蕭嚙�
@@ -99,10 +102,12 @@ class CoreSystem
 			if(1 == 1) // URL is a image
 			{
 				person_id = AC.CreatePerson(person_name, person_info);
+				
 				face_id   = AC.Person_Add(person_id, URL);
+				NewPerson(person_id , person_name ,person_fb , person_ig , person_info , uid );
+				NewPersonFace(person_id , face_id , URL);
 			}
-			NewPerson(person_id , person_name ,person_fb , person_ig , person_info , uid );
-			NewPersonFace(person_id , face_id , URL);
+			
 			
 			
 			
@@ -111,6 +116,25 @@ class CoreSystem
 		{
 			System.out.println("NewPerson Exception : "+exe.getMessage());
 		}
+	}
+	public void Person_AddFace(String person_id ,String URL , String uid) 	// 嚙踐��筆嚙踝嚙踝蕭
+	{
+		String face_id;
+		try
+		{
+			RestApiControl AC = new RestApiControl() ;
+			if(1 == 1) // URL is a image
+			{
+				face_id   = AC.Person_Add(person_id, URL);
+				
+				NewPersonFace(person_id , face_id , URL);
+			}
+		}
+		catch (Exception exe)
+		{
+			System.out.println("NewPerson Exception : "+exe.getMessage());
+		}
+		
 	}
 	
 	public void NewPerson(String person_id,String person_name,String person_fb,String person_ig ,String person_info ,String uid) 	// 嚙踐��筆嚙踝嚙踝蕭
@@ -208,9 +232,9 @@ class CoreSystem
 		int che6 = 6;
 		try
 		{
-			
+			String PersonData = "";
 			RestApiControl AC = new RestApiControl() ;
-			LinkedList Identify_result = AC.face_identify( URL );
+			LinkedList Identify_result = AC.face_identify( URL ); // 1.fail/succ  2.personId   3.confidence
 			
 			if(Identify_result.get(0).equals("fail")) 
 			{
@@ -218,7 +242,10 @@ class CoreSystem
 			}
 			else if(Identify_result.get(0).equals("success")) 
 			{
+				
 				data="success"+String.valueOf((char)(che6)) ;
+				System.out.println("getPersonIdData");
+				PersonData = getPersonIdData( Identify_result.get(1).toString() );	
 			}
 			
 			
@@ -249,6 +276,7 @@ class CoreSystem
 				
 				
 				data = rs.getString("person_name")+String.valueOf((char)(che6))+rs.getString("person_fb")+String.valueOf((char)(che6))+rs.getString("person_ig");
+				System.out.println("\n"+data );
 			}
 			stm.close();
 			

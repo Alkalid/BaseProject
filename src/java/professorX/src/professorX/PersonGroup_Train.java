@@ -13,36 +13,40 @@ import org.apache.http.util.EntityUtils;
 
 public class PersonGroup_Train 
 {
- public static void main(String[] args) 
- {
-     HttpClient httpclient = HttpClients.createDefault();
+	 public static void main(String[] args) 
+	 {
+		
+	 }
+	 public void Train() 
+	 {
+		 HttpClient httpclient = HttpClients.createDefault();
 
-     try
-     {
-    	 String personGroupId = "test_group";
-         URIBuilder builder = new URIBuilder("https://eastasia.api.cognitive.microsoft.com/face/v1.0/persongroups/"+ personGroupId +"/train");
+	     try
+	     {
+	    	 String personGroupId = "test_group";
+	         URIBuilder builder = new URIBuilder("https://eastasia.api.cognitive.microsoft.com/face/v1.0/persongroups/"+ personGroupId +"/train");
 
 
-         URI uri = builder.build();
-         HttpPost request = new HttpPost(uri);
-         request.setHeader("Ocp-Apim-Subscription-Key", "30d2ac8ee3bb4df0a42e82b24b315599");
+	         URI uri = builder.build();
+	         HttpPost request = new HttpPost(uri);
+	         request.setHeader("Ocp-Apim-Subscription-Key", "30d2ac8ee3bb4df0a42e82b24b315599");
 
 
-         // Request body
-         //StringEntity reqEntity = new StringEntity("{body}");
-         //request.setEntity(reqEntity);
+	         // Request body
+	         //StringEntity reqEntity = new StringEntity("{body}");
+	         //request.setEntity(reqEntity);
 
-         HttpResponse response = httpclient.execute(request);
-         HttpEntity entity = response.getEntity();
+	         HttpResponse response = httpclient.execute(request);
+	         HttpEntity entity = response.getEntity();
 
-         if (entity != null) 
-         {
-             System.out.println(EntityUtils.toString(entity));
-         }
-     }
-     catch (Exception e)
-     {
-         System.out.println(e.getMessage());
-     }
- }
+	         if (entity != null) 
+	         {
+	             System.out.println(EntityUtils.toString(entity));
+	         }
+	     }
+	     catch (Exception e)
+	     {
+	         System.out.println(e.getMessage());
+	     }
+	 }
 }

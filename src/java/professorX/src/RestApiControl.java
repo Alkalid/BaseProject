@@ -6,6 +6,7 @@ import java.util.LinkedList;
 import professorX.Face_Detect;
 import professorX.PersonGroupPerson_Create;
 import professorX.PersonGroupPerson_AddFace;
+import professorX.PersonGroup_Train;
 public class RestApiControl 
 {
 	
@@ -97,6 +98,11 @@ public class RestApiControl
 		persistedFaceId = result.get("persistedFaceId").toString();
 		
 		System.out.println( persistedFaceId  );
+		if(1 == 1 )//add success  Train the model
+		{
+			PersonGroup_Train Train = new PersonGroup_Train();
+			Train.Train();
+		}
 		return persistedFaceId;
 	}
 	
