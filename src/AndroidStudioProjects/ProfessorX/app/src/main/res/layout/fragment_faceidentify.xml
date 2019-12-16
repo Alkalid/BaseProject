@@ -14,9 +14,10 @@
         android:orientation="vertical"
         android:gravity="center"
         android:layout_centerVertical="true"
-        android:visibility="visible"
+
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="0dp"
+        android:visibility="gone">
 
         <pl.droidsonroids.gif.GifImageView
             android:layout_width="wrap_content"
@@ -75,6 +76,68 @@
             android:textSize="20dp"
             android:text="身份辨識中"
             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/IdentifyResult_LinerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+
+            android:textSize="20dp"
+            android:text=""
+            />
+        <TextView
+            android:id="@+id/PersonName_TextView"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:autoLink="web"
+            android:gravity="center"
+            android:text="馬英九"
+            />
+        <TextView
+            android:id="@+id/PersonInfo_TextView"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:autoLink="web"
+            android:gravity="left|center"
+            android:layout_marginTop="50dp"
+            android:text="台灣前總統"
+            />
+        <TextView
+            android:id="@+id/PersonFB_TextView"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:autoLink="web"
+            android:text="https://www.facebook.com/MaYingjeou"
+            />
+        <TextView
+            android:id="@+id/PersonIG_TextView"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:autoLink="web"
+            android:text="https://www.facebook.com/MaYingjeou"
+            />
+
+
     </LinearLayout>
 
     </FrameLayout>

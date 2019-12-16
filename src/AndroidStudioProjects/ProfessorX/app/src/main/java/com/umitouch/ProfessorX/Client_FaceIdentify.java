@@ -1,6 +1,7 @@
 package com.umitouch.ProfessorX;
 
 import android.os.Handler;
+import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -59,11 +60,27 @@ public class Client_FaceIdentify extends Thread
     }
     public void push(String str)
     {
-        String[] SData = str.split(String.valueOf((char)(che9)))[1].split(String.valueOf((char)(che6)));
+        String[] SData = str.split(String.valueOf((char)(che9)))[1].split(String.valueOf((char)(che7)));
 
+        if (SData[0].equals("Identify_start"))
+        {
+            RT_String = "";
+            Log.d("TestIdentify:" , "Company_start");
+
+        }
         if (SData[0].equals("Identify"))
         {
-            
+            RT_String += SData[1];
+
+        }
+        if (SData[0].equals("Identify_close"))
+        {
+            FL.IdentifySuccess(RT_String.split(String.valueOf((char)(che6))));
+
+        }
+
+        if (SData[0].equals("Identify_close"))
+        {
 
         }
 

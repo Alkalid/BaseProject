@@ -22,6 +22,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.android.internal.http.multipart.MultipartEntity;
 import com.loopj.android.http.AsyncHttpClient;
@@ -59,9 +60,14 @@ public class Fragment_FaceIdentify extends Fragment {
     private Button UMi_Button;
 
     private EditText URL_EditText;
+    private TextView PersonName;
+    private TextView PersonInfo;
+    private TextView PersonFB;
+    private TextView PersonIG;
 
     private LinearLayout Main_LinerLayout;
     private LinearLayout Searching_LinerLayout;
+    private LinearLayout IdentifyResult_LinerLayout;
 
     private String UID;
     private String URL;
@@ -79,6 +85,11 @@ public class Fragment_FaceIdentify extends Fragment {
         view = inflater.inflate(R.layout.fragment_faceidentify, container, false);
         Main_LinerLayout = (LinearLayout) view.findViewById(R.id.Main_LinerLayout);
         Searching_LinerLayout = (LinearLayout) view.findViewById(R.id.Searching_LinerLayout);
+        IdentifyResult_LinerLayout = (LinearLayout) view.findViewById(R.id.IdentifyResult_LinerLayout);
+        PersonName = (TextView) view.findViewById(R.id.PersonName_TextView);
+        PersonInfo = (TextView) view.findViewById(R.id.PersonInfo_TextView);
+        PersonFB = (TextView) view.findViewById(R.id.PersonFB_TextView);
+        PersonIG= (TextView) view.findViewById(R.id.PersonIG_TextView);
         URL_EditText = (EditText) view.findViewById(R.id.URL_EditText);
         UMi_Button = (Button) view.findViewById(R.id.button);
         UMi_Button.setOnClickListener(new View.OnClickListener() {
@@ -113,9 +124,15 @@ public class Fragment_FaceIdentify extends Fragment {
         Identify( URL );
     }
 
-    public void IdentifySuccess( )
+    public void IdentifySuccess(String[] IdentifyResult )
     {
-
+        Log.d("TestIdentify:" , IdentifyResult.toString());
+        Searching_LinerLayout.setVisibility(View.GONE);
+        IdentifyResult_LinerLayout.setVisibility(View.VISIBLE);
+        PersonName.setText(IdentifyResult[1] );
+        PersonFB.setText(IdentifyResult[2]);
+        PersonIG.setText(IdentifyResult[3]);
+        PersonInfo.setText(IdentifyResult[4]);
     }
 
     public void IdentifyFail( )
