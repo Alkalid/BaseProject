@@ -149,6 +149,14 @@ public class Fragment_FaceIdentify extends Fragment {
         DataSocket.start();
     }
 
+    public void CreatePerson(String URL,String person_name,String person_fb,String person_ig ,String person_info ,String uid  )
+    {
+        DataSocket = new Client_FaceIdentify();
+        DataSocket.setSource(this);
+        DataSocket.SocketInstruct = "CreatePerson "+URL+String.valueOf((char)(che9))+person_name+String.valueOf((char)(che9))+person_fb+String.valueOf((char)(che9))+person_ig+String.valueOf((char)(che9))+person_info+String.valueOf((char)(che9))+uid+String.valueOf((char)(che9));
+        DataSocket.start();
+    }
+
 
     /*private void getSelectImage(Intent data){
         //從 onActivityResult 傳入的data中，取得圖檔路徑
