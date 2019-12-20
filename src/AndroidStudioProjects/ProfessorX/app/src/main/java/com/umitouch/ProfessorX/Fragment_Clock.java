@@ -16,7 +16,7 @@ public class Fragment_Clock extends Fragment
     private Button UMi_Button;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) //認親
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) //認親//
     {
         Log.d("TestMain:" , "notify   01  ");
         view = inflater.inflate(R.layout.fragment_clock, container, false);

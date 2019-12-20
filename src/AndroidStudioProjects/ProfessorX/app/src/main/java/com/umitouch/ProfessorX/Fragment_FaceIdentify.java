@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -59,15 +60,18 @@ public class Fragment_FaceIdentify extends Fragment {
     private Client_FaceIdentify DataSocket ;
     private Button UMi_Button;
 
+
+
     private EditText URL_EditText;
     private TextView PersonName;
     private TextView PersonInfo;
     private TextView PersonFB;
     private TextView PersonIG;
+    private ViewPager PersonImage_ViewPager;
 
     private LinearLayout Main_LinerLayout;
     private LinearLayout Searching_LinerLayout;
-    private LinearLayout IdentifyResult_LinerLayout;
+    private LinearLayout IdentifyResult_LinerLayout;//
 
     private String UID;
     private String URL;
@@ -90,6 +94,7 @@ public class Fragment_FaceIdentify extends Fragment {
         PersonInfo = (TextView) view.findViewById(R.id.PersonInfo_TextView);
         PersonFB = (TextView) view.findViewById(R.id.PersonFB_TextView);
         PersonIG= (TextView) view.findViewById(R.id.PersonIG_TextView);
+        PersonImage_ViewPager = (ViewPager) view.findViewById(R.id.PersonImage_ViewPager);
         URL_EditText = (EditText) view.findViewById(R.id.URL_EditText);
         UMi_Button = (Button) view.findViewById(R.id.button);
         UMi_Button.setOnClickListener(new View.OnClickListener() {
@@ -97,11 +102,14 @@ public class Fragment_FaceIdentify extends Fragment {
             public void onClick(View v) {
                 StartIdentify();
             }
-        });
+        });//
 
 
 
         init();
+
+
+        show();
         return view;
     }
 
@@ -135,13 +143,21 @@ public class Fragment_FaceIdentify extends Fragment {
         PersonInfo.setText(IdentifyResult[4]);
     }
 
+    public void show()
+    {
+        String[] image = {"https://images.chinatimes.com/newsphoto/2018-12-29/900/20181229000914.jpg","https://cw1.tw/CW/images/article/C1415940973254.jpg"};
+
+        ViewPagerAdapter adapter = new ViewPagerAdapter(Fragment_FaceIdentify.this,image);
+        PersonImage_ViewPager.setAdapter(adapter);
+    }
+
     public void IdentifyFail( )
     {
 
     }
 
 
-    public void Identify(String URL )
+    public void Identify(String URL )//
     {
         DataSocket = new Client_FaceIdentify();
         DataSocket.setSource(this);

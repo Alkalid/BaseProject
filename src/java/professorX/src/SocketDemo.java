@@ -149,7 +149,7 @@ public class SocketDemo
 							String[] data = code.split(String.valueOf((char)(che9))); // uid  URL
 							cs.connect();
 							
-							;
+							
 							
 							if ( cs.getIdentify( data[1] ).equals("success") )
 							{
@@ -175,6 +175,13 @@ public class SocketDemo
 
 							isTerminated();
 							
+						}
+						if (instruct.equals("CreatePerson"))	
+						{
+							String[] data = code.split(String.valueOf((char)(che9))); // String URL,String person_name,String person_fb,String person_ig ,String person_info ,String uid
+							cs.connect();
+							cs.CreatePerson(data[0],data[1],data[2],data[3],data[4],data[5]);
+							sendToTarget( String.valueOf((char)(che9)) +"CreatePerson_success" + String.valueOf((char)(che7))   );
 						}
 						
 						
