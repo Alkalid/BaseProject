@@ -170,7 +170,7 @@ public class SocketDemo
 							}
 							else
 							{
-								sendToTarget( String.valueOf((char)(che9)) +"Identify_fail" + String.valueOf((char)(che7))   );
+								sendToTarget( String.valueOf((char)(che9)) +"Identify_fail" + String.valueOf((char)(che7))+cs.SendPackage.get(0).toString() + String.valueOf((char)(che7)) );
 							}
 
 							isTerminated();
