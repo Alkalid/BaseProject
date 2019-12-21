@@ -12,6 +12,10 @@ import java.security.Security;
 import java.sql.*;    
 import java.io.Console;
 
+import java.net.URL;
+import java.net.URLConnection;
+import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
 
 class CoreSystem
 {
@@ -41,8 +45,9 @@ class CoreSystem
 		//cs.NewAccount("kartd80165", "ddaa3732", "kartd80165@gmail.com");
 		//cs.checkLoginData("kartd80165", "ddaa3732");
 		//cs.CreatePerson("https://images.chinatimes.com/newsphoto/2019-05-17/900/20190517003816.jpg" , "馬英九" ,"https://www.facebook.com/MaYingjeou","https://www.instagram.com/ma_yingjeou/?hl=zh-tw","台灣前總統","uml1uYPeVTUJU" );
-		cs.getIdentify("https://storage.googleapis.com/www-cw-com-tw/article/201812/article-5c29b03176521.jpg");
+		//cs.getIdentify("https://storage.googleapis.com/www-cw-com-tw/article/201812/article-5c29b03176521.jpg");
 		//cs.Person_AddFace("d2caae92-782a-45d4-b1d9-e0d919ef1bf7","https://storage.googleapis.com/www-cw-com-tw/article/201812/article-5c29b03176521.jpg","uml1uYPeVTUJU" );
+		cs.getImg(); 
 	}
 	
 	public void connect()	// ��嚙踐��蕭嚙質謍堆蕭賹蕭嚙�
@@ -566,4 +571,27 @@ class CoreSystem
 			
 		return Sequence;
 	}
+	
+	public void getImg() 
+	{
+		try
+		{
+			URL url = new URL("https://ttshow.tw/media/uploads/2018/09/21/14.PNG");
+	        URLConnection connection = url.openConnection();
+	        connection.setRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)");
+	        connection.setDoOutput(true);
+	        BufferedImage image = ImageIO.read(connection.getInputStream());  
+	        int srcWidth = image .getWidth();      // 源图宽度
+	        int srcHeight = image .getHeight();    // 源图高度
+	        
+	        System.out.println("srcWidth = " + srcWidth);
+	        System.out.println("srcHeight = " + srcHeight);
+		}
+		catch (Exception exe)
+		{
+			System.out.println("getImg Exception : "+exe.getMessage());
+		}
+        
+	 }
+	
 }
