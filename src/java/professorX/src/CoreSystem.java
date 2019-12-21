@@ -240,6 +240,7 @@ class CoreSystem
 		{
 			
 			String PersonData = "";
+			String PersonFace = "";
 			RestApiControl AC = new RestApiControl() ;
 			LinkedList Identify_result = AC.face_identify( URL ); // 1.fail/succ  2.personId   3.confidence
 			
@@ -251,11 +252,14 @@ class CoreSystem
 			
 			else if(Identify_result.get(0).equals("success")) 
 			{
-				System.out.println("getPersonIdData");
-				PersonData = getPersonIdData( Identify_result.get(1).toString() );	
-				System.out.println("\n"+PersonData );
 				State="success";
-				DataSuite="success"+String.valueOf((char)(che6))+PersonData;
+				PersonData = getPersonIdData( Identify_result.get(1).toString() );	
+				PersonFace = getPersonIdFace( Identify_result.get(1).toString() );	
+				
+				
+				DataSuite="success"+String.valueOf((char)(che6))+PersonData+String.valueOf((char)(che6))+PersonFace;
+				//person_name 6 ....  person_info
+				//person_face 6 .... 
 				SendLock = true;
 				
 			}
@@ -317,6 +321,38 @@ class CoreSystem
 		catch (Exception exe)
 		{
 			System.out.println("getPersonIdData Exception : "+exe.getMessage());
+		}
+		
+		return data;
+	}
+	
+	public String getPersonIdFace(String personId )		
+	{
+		String data = "";
+		int che8 = 8;
+		int endPart = 3;
+		int FaceNum = 0;
+		try
+		{
+			ResultSet rs;
+			Statement stm = con_Demo.createStatement();	
+			rs = stm.executeQuery("select person_face.* from person_face where person_face.person_id = '"+personId+"'");	
+			while(rs.next())
+			{ 
+				FaceNum++;
+				data += rs.getString("url")+String.valueOf((char)(che8));
+				if(FaceNum == endPart)
+				{
+					break;
+				}
+				
+			}
+			stm.close();
+			
+		}
+		catch (Exception exe)
+		{
+			System.out.println("getPersonIdFace Exception : "+exe.getMessage());
 		}
 		
 		return data;

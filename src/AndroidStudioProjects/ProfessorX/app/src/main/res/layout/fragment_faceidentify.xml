@@ -94,16 +94,19 @@
             android:layout_alignParentLeft="true"
 
             >
+
         </android.support.v4.view.ViewPager>
+
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
-
-            android:textSize="20dp"
             android:text=""
-            />
+
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
         <TextView
             android:id="@+id/PersonName_TextView"
             android:layout_width="300dp"
@@ -112,7 +115,7 @@
             android:textSize="20dp"
             android:autoLink="web"
             android:gravity="center"
-            android:text="馬英九"
+            android:text="name"
             />
         <TextView
             android:id="@+id/PersonInfo_TextView"
@@ -123,7 +126,7 @@
             android:autoLink="web"
             android:gravity="left|center"
             android:layout_marginTop="50dp"
-            android:text="台灣前總統"
+            android:text="info"
             />
         <TextView
             android:id="@+id/PersonFB_TextView"
@@ -132,7 +135,7 @@
             android:textColor="#000000"
             android:textSize="20dp"
             android:autoLink="web"
-            android:text="https://www.facebook.com/MaYingjeou"
+            android:text="fb"
             />
         <TextView
             android:id="@+id/PersonIG_TextView"
@@ -141,10 +144,10 @@
             android:textColor="#000000"
             android:textSize="20dp"
             android:autoLink="web"
-            android:text="https://www.facebook.com/MaYingjeou"
+            android:text="ig"
             />
 
 
     </LinearLayout>
 
-    </FrameLayout>
+</FrameLayout>

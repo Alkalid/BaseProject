@@ -24,6 +24,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.internal.http.multipart.MultipartEntity;
 import com.loopj.android.http.AsyncHttpClient;
@@ -83,6 +84,7 @@ public class Fragment_FaceIdentify extends Fragment {
 
     private String uploadedImageUrl = "";
     private int che9 = 9;
+    private int che8 = 8;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
@@ -109,7 +111,7 @@ public class Fragment_FaceIdentify extends Fragment {
         init();
 
 
-        show();
+        //show();
         return view;
     }
 
@@ -141,19 +143,23 @@ public class Fragment_FaceIdentify extends Fragment {
         PersonFB.setText(IdentifyResult[2]);
         PersonIG.setText(IdentifyResult[3]);
         PersonInfo.setText(IdentifyResult[4]);
+        show(IdentifyResult[5].split(String.valueOf((char)(che8))));
+        Log.d("TestIdentify:" , IdentifyResult[5].toString());
     }
 
-    public void show()
+    public void show(String[] FaceList)
     {
-        String[] image = {"https://images.chinatimes.com/newsphoto/2018-12-29/900/20181229000914.jpg","https://cw1.tw/CW/images/article/C1415940973254.jpg"};
+        //String[] image = {"https://images.chinatimes.com/newsphoto/2018-12-29/900/20181229000914.jpg","https://cw1.tw/CW/images/article/C1415940973254.jpg"};
 
-        ViewPagerAdapter adapter = new ViewPagerAdapter(Fragment_FaceIdentify.this,image);
+        ViewPagerAdapter adapter = new ViewPagerAdapter(Fragment_FaceIdentify.this,FaceList);
         PersonImage_ViewPager.setAdapter(adapter);
     }
 
-    public void IdentifyFail( )
+    public void IdentifyFail()
     {
-
+        Searching_LinerLayout.setVisibility(View.GONE);
+        Main_LinerLayout.setVisibility(View.VISIBLE);
+        Toast.makeText(getActivity().getBaseContext(),"圖片辨識失敗",Toast.LENGTH_SHORT).show();
     }
 
 
