@@ -81,8 +81,9 @@ public class Client_FaceIdentify extends Thread
 
         if (SData[0].equals("Identify_fail"))
         {
-            FL.IdentifyFail();
+            FL.IdentifyFail(SData[1]);
         }
+
 
     }
 

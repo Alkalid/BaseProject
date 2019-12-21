@@ -155,11 +155,20 @@ public class Fragment_FaceIdentify extends Fragment {
         PersonImage_ViewPager.setAdapter(adapter);
     }
 
-    public void IdentifyFail()
+    public void IdentifyFail(String FailMessenge)
     {
         Searching_LinerLayout.setVisibility(View.GONE);
         Main_LinerLayout.setVisibility(View.VISIBLE);
-        Toast.makeText(getActivity().getBaseContext(),"圖片辨識失敗",Toast.LENGTH_SHORT).show();
+        if(FailMessenge.equals("fail_size"))
+        {
+            Log.d("TestIdentify:" , "fail_size");
+            Toast.makeText(getActivity().getBaseContext(),"圖片大小錯誤",Toast.LENGTH_SHORT).show();
+        }
+        else if(FailMessenge.equals("fail"))
+        {
+            Toast.makeText(getActivity().getBaseContext(),"圖片辨識失敗，請提供其他相片辨識",Toast.LENGTH_SHORT).show();
+        }
+
     }
 
 
