@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private Fragment_AddFace Fragment_AddFace = null;
     private Fragment_Notification Fragment_Notification = null;
     private Fragment_Login Fragment_Login = null;
+    private Fragment_Calender Fragment_Calender  = null;
     public qrcode_camera qrcode_camera = null;
     private Barcode_camera Barcode_camera = null;
 
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Fragment_FaceIdentify = new Fragment_FaceIdentify();
         Fragment_AddFace = new Fragment_AddFace();
         Fragment_Notification = new Fragment_Notification();
-
+        Fragment_Calender  = new Fragment_Calender();
         qrcode_camera = new qrcode_camera();
         Barcode_camera = new Barcode_camera();
         Fragment_Login = new Fragment_Login();
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Fragment_FaceIdentify.setSource(this);
         Fragment_AddFace.setSource(this);
         Fragment_Notification.setSource(this);
+        Fragment_Calender.setSource(this);
         qrcode_camera.setSource(this);
         Barcode_camera.setSource(this);
         Fragment_Login.setSource(this);
@@ -219,9 +221,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         else if (id == R.id.nav_manage)
         {
-            if (!Barcode_camera.isAdded())
+            if (!Fragment_Calender.isAdded())
             {
-                this.getSupportFragmentManager().beginTransaction().replace(R.id.container, Barcode_camera).addToBackStack(null).commit();
+                this.getSupportFragmentManager().beginTransaction().replace(R.id.container, Fragment_Calender).addToBackStack(null).commit();
             }
         }
 
