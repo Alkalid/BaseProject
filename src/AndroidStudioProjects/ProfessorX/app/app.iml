@@ -101,10 +101,10 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:runner:1.0.2@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:monitor:1.0.2@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-idling-resource:3.0.2@aar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:C.\Users\POLARIS\BaseProject\src\AndroidStudioProjects\ProfessorX\app\libs\httpmime-4.3.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:C.\Users\POLARIS\BaseProject\src\AndroidStudioProjects\ProfessorX\app\libs\picasso-2.5.2-sources.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:C.\Users\POLARIS\BaseProject\src\AndroidStudioProjects\ProfessorX\app\libs\picasso-2.5.2.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:C.\Users\POLARIS\BaseProject\src\AndroidStudioProjects\ProfessorX\app\libs\universal-image-loader-1.9.5.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:C.\Users\kartd\AndroidStudioProjects\ProfessorX\app\libs\httpmime-4.3.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:C.\Users\kartd\AndroidStudioProjects\ProfessorX\app\libs\picasso-2.5.2-sources.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:C.\Users\kartd\AndroidStudioProjects\ProfessorX\app\libs\picasso-2.5.2.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:C.\Users\kartd\AndroidStudioProjects\ProfessorX\app\libs\universal-image-loader-1.9.5.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:common:1.1.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-annotations:27.1.1@jar" level="project" />
