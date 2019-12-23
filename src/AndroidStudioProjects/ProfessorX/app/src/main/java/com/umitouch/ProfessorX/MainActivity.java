@@ -221,15 +221,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         else if (id == R.id.nav_manage)
         {
-            if (!Fragment_Calender.isAdded())
-            {
-                this.getSupportFragmentManager().beginTransaction().replace(R.id.container, Fragment_Calender).addToBackStack(null).commit();
-            }
+
         }
 
         else if (id == R.id.nav_share)
         {
-
+            if (!Fragment_Calender.isAdded())
+            {
+                this.getSupportFragmentManager().beginTransaction().replace(R.id.container, Fragment_Calender).addToBackStack(null).commit();
+            }
         }
 
         else if (id == R.id.nav_send)
