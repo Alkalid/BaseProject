@@ -100,10 +100,10 @@ public class Fragment_Clock extends Fragment
                 Toast.makeText(getActivity(), "不能設定過去時間", Toast.LENGTH_SHORT).show();
             } else if(d1.compareTo(d2) < 0) {
                 Log.d("TestMain:" , " TimeVarify  <0  ");
-                clock_open();
+                TimeExist();
             } else if(d1.compareTo(d2) == 0) {
                 Log.d("TestMain:" , " TimeVarify  =0  ");
-                clock_open();
+                TimeExist();
             }
         }
         catch (Exception e){
@@ -111,7 +111,7 @@ public class Fragment_Clock extends Fragment
         }
 
 
-        
+
     }
 
     private void TimeExist(){
@@ -128,7 +128,7 @@ public class Fragment_Clock extends Fragment
             {
                 Log.d("TestMain:" , " TimeExist  3.5  ");
                 String[] clockData = data[i].split("/");
-                if( Integer.valueOf(clockData[0]) == datePicker.getYear() &&  Month == datePicker.getMonth() && Day == datePicker.getDayOfMonth() && Hour == timePicker.getCurrentHour() && Minute == timePicker.getCurrentMinute())
+                if( Integer.valueOf(clockData[0]) == datePicker.getYear() &&  Integer.valueOf(clockData[1]) == datePicker.getMonth() && Integer.valueOf(clockData[2]) == datePicker.getDayOfMonth() && Integer.valueOf(clockData[3]) == timePicker.getCurrentHour() && Integer.valueOf(clockData[4]) == timePicker.getCurrentMinute())
                 {
                     EXIST = true;
                 }
