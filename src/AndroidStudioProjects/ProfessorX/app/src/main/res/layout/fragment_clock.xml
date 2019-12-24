@@ -26,6 +26,13 @@
             android:calendarViewShown="false"
             android:visibility="gone"/>
 
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datePicker"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:visibility="visible"/>
 
         <Button
             android:id="@+id/TimeSetting_button"
