@@ -75,12 +75,58 @@ public class Fragment_Clock extends Fragment
     private void clock_open() {
         Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
         i.putExtra(AlarmClock.EXTRA_MESSAGE, "New Alarm");
-        i.putExtra(AlarmClock.EXTRA_HOUR, 13);
-        i.putExtra(AlarmClock.EXTRA_MINUTES, 30);
+        i.putExtra(AlarmClock.EXTRA_HOUR, timePicker.getCurrentHour());
+        i.putExtra(AlarmClock.EXTRA_MINUTES, timePicker.getCurrentMinute());
         startActivity(i);
     }
 
+
+
     private void TimeVarify(){
+        if( Year <= datePicker.getYear() ){
+            if( Month <= datePicker.getMonth() ){
+                if(  Day <= datePicker.getDayOfMonth() ){
+                    if( Hour <= timePicker.getCurrentHour() ){
+                        if( Minute <= timePicker.getCurrentMinute() ){
+                            TimeExist();
+                        }
+                    }
+                }
+            }
+        }
+        else{//顯示錯誤
+            Toast.makeText(getActivity(), "不能設定過去時間", Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
+    private void TimeExist(){
+        String[] data = null; //     year/month/date/hour/min
+        boolean EXIST = false;
+
+        if(  get_ClockData().length != 0)
+        {
+            data =  get_ClockData();
+            for(int i = 0 ; i< data.length ; i++)
+            {
+                String[] clockData = data[i].split("/");
+                if( Integer.valueOf(clockData[0]) == datePicker.getYear() &&  Month == datePicker.getMonth() && Day == datePicker.getDayOfMonth() && Hour == timePicker.getCurrentHour() && Minute == timePicker.getCurrentMinute())
+                {
+                    EXIST = true;
+                }
+            }
+
+            if( EXIST ){//錯誤訊息
+                Toast.makeText(getActivity(), "時間已存在", Toast.LENGTH_SHORT).show();
+            }
+            else{//call clock_open
+                clock_open();
+            }
+        }
+        else
+        {
+            clock_open();
+        }
 
     }
 
@@ -90,7 +136,12 @@ public class Fragment_Clock extends Fragment
     }
     private String[] get_ClockData()
     {
-        String[] ClockData =  MA.getClockData().split(";");
+        String[] ClockData = null;
+        if(  !MA.getClockData().equals(null) )
+        {
+            ClockData =  MA.getClockData().split(";");
+        }
+
 
         return ClockData ;
     }
