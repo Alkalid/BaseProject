@@ -12,6 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 public class Fragment_Clock extends Fragment
@@ -21,17 +23,22 @@ public class Fragment_Clock extends Fragment
 
     private Button comfirm_button;
     private Button TimeSetting_button;
+    private TimePicker timePicker;
+    private DatePicker datePicker;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) //認親//
     {
         Log.d("TestMain:" , "notify   01  ");
         view = inflater.inflate(R.layout.fragment_clock, container, false);
+
+        timePicker = (TimePicker) view.findViewById(R.id.timePicker);
+        datePicker = (DatePicker) view.findViewById(R.id.datePicker);
+        ////
         TimeSetting_button = (Button)view.findViewById(R.id.TimeSetting_button);
         TimeSetting_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 TimeVarify();
-
             }
         });//
         Log.d("TestMain:" , "notify   02  ");
@@ -60,6 +67,17 @@ public class Fragment_Clock extends Fragment
 
     private void TimeVarify(){
 
+    }
+
+    private void store_ClockData(String Data)
+    {
+        MA.StoreClockData(Data);
+    }
+    private String[] get_ClockData()
+    {
+        String[] ClockData =  MA.getClockData().split(";");
+
+        return ClockData ;
     }
 
     public void setSource(MainActivity MA)
