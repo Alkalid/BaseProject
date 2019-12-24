@@ -16,6 +16,8 @@ import android.widget.DatePicker;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import java.sql.Time;
+
 public class Fragment_Clock extends Fragment
 {
     View view;
@@ -25,6 +27,13 @@ public class Fragment_Clock extends Fragment
     private Button TimeSetting_button;
     private TimePicker timePicker;
     private DatePicker datePicker;
+
+    private int Year;
+    private int Month;
+    private int Day;
+
+    private int Hour;
+    private int Minute;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) //認親//
     {
@@ -34,7 +43,7 @@ public class Fragment_Clock extends Fragment
         timePicker = (TimePicker) view.findViewById(R.id.timePicker);
         datePicker = (DatePicker) view.findViewById(R.id.datePicker);
         ////
-        TimeSetting_button = (Button)view.findViewById(R.id.TimeSetting_button);
+        TimeSetting_button = (Button)view.findViewById(R.id.comfirm_button);
         TimeSetting_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,6 +64,12 @@ public class Fragment_Clock extends Fragment
     private void init()
     {
         Log.d("TestMain:" , "notify   init  ");
+        Year = datePicker.getYear();
+        Month = datePicker.getMonth();
+        Day = datePicker.getDayOfMonth();
+
+        Hour = timePicker.getCurrentHour();
+        Minute = timePicker.getCurrentMinute();
     }
 
     private void clock_open() {
