@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         SharedPreferences userInfo = getSharedPreferences("data", MODE_PRIVATE);
         SharedPreferences.Editor editor = userInfo.edit();
-        editor.putString("UserID", Data);
+        editor.putString("ClockData", Data);
 
         editor.commit();
         Log.d("TestMain:" , "保存鬧鐘資訊");
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public String getClockData()   //初次登入  設定登入資料 這樣下次就能自動登入
     {
         SharedPreferences userInfo = getSharedPreferences("data", MODE_PRIVATE);
-        String UserID = userInfo.getString("UserID", null);//读取username
+        String UserID = userInfo.getString("ClockData", null);//读取username
 
 
 
