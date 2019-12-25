@@ -44,11 +44,11 @@ class CoreSystem
 		cs.connect();
 		//cs.NewAccount("kartd80165", "ddaa3732", "kartd80165@gmail.com");
 		//cs.checkLoginData("kartd80165", "ddaa3732");
-		//cs.CreatePerson("https://images.chinatimes.com/newsphoto/2019-05-17/900/20190517003816.jpg" , "馬英九" ,"https://www.facebook.com/MaYingjeou","https://www.instagram.com/ma_yingjeou/?hl=zh-tw","台灣前總統","uml1uYPeVTUJU" );
+		cs.CreatePerson("https://images.chinatimes.com/newsphoto/2019-05-17/900/20190517003816.jpg" , "馬英九" ,"https://www.facebook.com/MaYingjeou","https://www.instagram.com/ma_yingjeou/?hl=zh-tw","台灣前總統","uml1uYPeVTUJU" );
 		//cs.getIdentify("https://storage.googleapis.com/www-cw-com-tw/article/201812/article-5c29b03176521.jpg");
 		//cs.Person_AddFace("d2caae92-782a-45d4-b1d9-e0d919ef1bf7","https://storage.googleapis.com/www-cw-com-tw/article/201812/article-5c29b03176521.jpg","uml1uYPeVTUJU" );
 		//cs.getImg("https://www.facebook.com/CubeSat.TW/posts/2234087903287367/");
-		cs.getIdentify("https://www.thinkingtaiwan.com/sites/default/files/styles/author-photo-normal/public/images/photo/writer/11146191_10152629609406065_6142867647903751859_n.jpg?itok=NLMFkvAQ");	
+		//cs.getIdentify("https://www.thinkingtaiwan.com/sites/default/files/styles/author-photo-normal/public/images/photo/writer/11146191_10152629609406065_6142867647903751859_n.jpg?itok=NLMFkvAQ");	
 	}
 	
 	public void connect()	// ��嚙踐��蕭嚙質謍堆蕭賹蕭嚙�
