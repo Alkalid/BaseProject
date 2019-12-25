@@ -64,8 +64,7 @@ public class Client_AddFace extends Thread
 
         if (SData[0].equals("CreatePerson_success"))
         {
-            FL.AddSuccess();
-
+            FL.aaa();
         }
 
 

@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Fragment_AddFace extends Fragment
 {
@@ -29,7 +30,7 @@ public class Fragment_AddFace extends Fragment
         UMi_Button.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-        MA.setData("123");
+            AddSuccess();
         }
     });
         // Inflate the layout for this fragment
@@ -50,11 +51,14 @@ public class Fragment_AddFace extends Fragment
 
     }
 
-    public void AddSuccess()
+    public void AddSuccess()//顯示上傳成功
     {
         CreatePerson(id_EditText.getText().toString(),name_EditText.getText().toString(),fb_EditText.getText().toString(),ig_EditText.getText().toString(),identity_EditText.getText().toString()  , MA.UID);
     }
-
+    public void aaa()
+    {
+        Toast.makeText(getActivity().getBaseContext(),"嘿嘿你成功上傳了!!",Toast.LENGTH_SHORT).show();
+    }
     public void CreatePerson(String URL,String person_name,String person_fb,String person_ig ,String person_info ,String uid  )
     {
         DataSocket = new Client_AddFace();
