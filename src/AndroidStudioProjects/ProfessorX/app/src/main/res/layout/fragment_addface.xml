@@ -18,15 +18,43 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="60dp"
-            android:text="Fragment_2" />
+            android:text="人物的資訊"  />
 
-        <!--     -->
-
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="圖片網址:"
+            android:text=""   />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="名稱:"
+            android:text=""   />
+        <EditText
+            android:id="@+id/fb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="FB網址:"
+            android:text=""   />
+        <EditText
+            android:id="@+id/ig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IG的網址:"
+            android:text=""   />
+        <EditText
+            android:id="@+id/identity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="人物介紹:"
+            android:text=""   />
         <Button
             android:id="@+id/button"
             android:layout_width="187dp"
             android:layout_height="wrap_content"
-            android:text="修改字串"
+            android:text="上傳"
             />
 
     </LinearLayout>
