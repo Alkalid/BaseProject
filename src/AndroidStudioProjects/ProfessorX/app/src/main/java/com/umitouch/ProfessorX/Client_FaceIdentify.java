@@ -61,7 +61,7 @@ public class Client_FaceIdentify extends Thread
     public void push(String str)
     {
         String[] SData = str.split(String.valueOf((char)(che9)))[1].split(String.valueOf((char)(che7)));
-
+        Log.d("TestIdentify:" , str );
         if (SData[0].equals("Identify_start"))
         {
             RT_String = "";
@@ -79,10 +79,11 @@ public class Client_FaceIdentify extends Thread
 
         }
 
-        if (SData[0].equals("Identify_close"))
+        if (SData[0].equals("Identify_fail"))
         {
-
+            FL.IdentifyFail(SData[1]);
         }
+
 
     }
 

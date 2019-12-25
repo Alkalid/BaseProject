@@ -90,16 +90,10 @@ public class Fragment_Login extends Fragment
         MA.Account = Account.getText().toString();
         MA.SetUserData();
 
-
-
-
-
-
     }
     public void Fail()
     {
         Toast.makeText(  getActivity(), "登入失敗 帳號或密碼錯誤", Toast.LENGTH_SHORT).show();
-
     }
     public void CheckIn(String Account, String Password)
     {

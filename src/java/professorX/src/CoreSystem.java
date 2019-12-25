@@ -12,6 +12,10 @@ import java.security.Security;
 import java.sql.*;    
 import java.io.Console;
 
+import java.net.URL;
+import java.net.URLConnection;
+import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
 
 class CoreSystem
 {
@@ -41,8 +45,10 @@ class CoreSystem
 		//cs.NewAccount("kartd80165", "ddaa3732", "kartd80165@gmail.com");
 		//cs.checkLoginData("kartd80165", "ddaa3732");
 		//cs.CreatePerson("https://images.chinatimes.com/newsphoto/2019-05-17/900/20190517003816.jpg" , "馬英九" ,"https://www.facebook.com/MaYingjeou","https://www.instagram.com/ma_yingjeou/?hl=zh-tw","台灣前總統","uml1uYPeVTUJU" );
-		cs.getIdentify("https://storage.googleapis.com/www-cw-com-tw/article/201812/article-5c29b03176521.jpg");
+		//cs.getIdentify("https://storage.googleapis.com/www-cw-com-tw/article/201812/article-5c29b03176521.jpg");
 		//cs.Person_AddFace("d2caae92-782a-45d4-b1d9-e0d919ef1bf7","https://storage.googleapis.com/www-cw-com-tw/article/201812/article-5c29b03176521.jpg","uml1uYPeVTUJU" );
+		//cs.getImg("https://www.facebook.com/CubeSat.TW/posts/2234087903287367/");
+		cs.getIdentify("https://www.thinkingtaiwan.com/sites/default/files/styles/author-photo-normal/public/images/photo/writer/11146191_10152629609406065_6142867647903751859_n.jpg?itok=NLMFkvAQ");	
 	}
 	
 	public void connect()	// ��嚙踐��蕭嚙質謍堆蕭賹蕭嚙�
@@ -235,31 +241,47 @@ class CoreSystem
 		SendLock = false;
 		String State = "";
 		String DataSuite = "";
+		String PersonData = "";
+		String PersonFace = "";
+		String ImageData[] ;
+		Boolean sizecorrect = false;
+		LinkedList Identify_result = new LinkedList();
 		int che6 = 6;
 		try
 		{
-			
-			String PersonData = "";
-			RestApiControl AC = new RestApiControl() ;
-			LinkedList Identify_result = AC.face_identify( URL ); // 1.fail/succ  2.personId   3.confidence
-			
-			if(Identify_result.get(0).equals("fail")) 
+			ImageData = this.getImg(URL).split(";");
+			if( Integer.valueOf(ImageData[0]) > 400 && Integer.valueOf(ImageData[1]) > 400 )
 			{
-				DataSuite="fail"+String.valueOf((char)(che6));
+				sizecorrect = true;
+				RestApiControl AC = new RestApiControl();
+				Identify_result = AC.face_identify( URL ); // 1.fail/succ  2.personId   3.confidence
+			}
+	///////////////////////////////////////////////////////////////////////////////////////////////////////// Step1   ImageSize		 
+			if( sizecorrect == false ) 
+			{
+				SendLock = true;
+				DataSuite="fail_size";
 				State="fail";
 			}
-			
+			else if(Identify_result.get(0).equals("fail") || sizecorrect == false) 
+			{
+				SendLock = true;
+				DataSuite="fail";
+				State="fail";
+			}
 			else if(Identify_result.get(0).equals("success")) 
 			{
-				System.out.println("getPersonIdData");
-				PersonData = getPersonIdData( Identify_result.get(1).toString() );	
-				System.out.println("\n"+PersonData );
 				State="success";
-				DataSuite="success"+String.valueOf((char)(che6))+PersonData;
-				SendLock = true;
+				PersonData = getPersonIdData( Identify_result.get(1).toString() );	
+				PersonFace = getPersonIdFace( Identify_result.get(1).toString() );	
 				
+				
+				DataSuite="success"+String.valueOf((char)(che6))+PersonData+String.valueOf((char)(che6))+PersonFace;
+				//person_name 6 ....  person_info
+				//person_face 6 .... 
+				SendLock = true;
 			}
-			
+///////////////////////////////////////////////////////////////////////////////////////////////////////// Step2   IdentifyImage		
 			
 			while (true)//	 Total data
 			{
@@ -317,6 +339,38 @@ class CoreSystem
 		catch (Exception exe)
 		{
 			System.out.println("getPersonIdData Exception : "+exe.getMessage());
+		}
+		
+		return data;
+	}
+	
+	public String getPersonIdFace(String personId )		
+	{
+		String data = "";
+		int che8 = 8;
+		int endPart = 3;
+		int FaceNum = 0;
+		try
+		{
+			ResultSet rs;
+			Statement stm = con_Demo.createStatement();	
+			rs = stm.executeQuery("select person_face.* from person_face where person_face.person_id = '"+personId+"'");	
+			while(rs.next())
+			{ 
+				FaceNum++;
+				data += rs.getString("url")+String.valueOf((char)(che8));
+				if(FaceNum == endPart)
+				{
+					break;
+				}
+				
+			}
+			stm.close();
+			
+		}
+		catch (Exception exe)
+		{
+			System.out.println("getPersonIdFace Exception : "+exe.getMessage());
 		}
 		
 		return data;
@@ -530,4 +584,31 @@ class CoreSystem
 			
 		return Sequence;
 	}
+	
+	public String getImg(String imageURL) 
+	{
+		String result = "";
+		try
+		{
+			
+			URL url = new URL(imageURL);
+	        URLConnection connection = url.openConnection();
+	        connection.setRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)");
+	        connection.setDoOutput(true);
+	        BufferedImage image = ImageIO.read(connection.getInputStream());  
+	        int srcWidth = image .getWidth();      // 源图宽度
+	        int srcHeight = image .getHeight();    // 源图高度
+	        
+	        System.out.println("srcWidth = " + srcWidth);
+	        System.out.println("srcHeight = " + srcHeight);
+	        result = srcWidth + ";" + srcHeight ;
+	        
+		}
+		catch (Exception exe)
+		{
+			System.out.println("getImg Exception : "+exe.getMessage());
+		}
+		return result;
+	 }
+	
 }

@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private Fragment_AddFace Fragment_AddFace = null;
     private Fragment_Notification Fragment_Notification = null;
     private Fragment_Login Fragment_Login = null;
+    private Fragment_Calender Fragment_Calender  = null;
+    private Fragment_Clock Fragment_Clock = null;
     public qrcode_camera qrcode_camera = null;
     private Barcode_camera Barcode_camera = null;
 
@@ -55,7 +57,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Fragment_FaceIdentify = new Fragment_FaceIdentify();
         Fragment_AddFace = new Fragment_AddFace();
         Fragment_Notification = new Fragment_Notification();
-
+        Fragment_Calender  = new Fragment_Calender();
+        Fragment_Clock = new Fragment_Clock();
         qrcode_camera = new qrcode_camera();
         Barcode_camera = new Barcode_camera();
         Fragment_Login = new Fragment_Login();
@@ -63,9 +66,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Fragment_FaceIdentify.setSource(this);
         Fragment_AddFace.setSource(this);
         Fragment_Notification.setSource(this);
+        Fragment_Calender.setSource(this);
         qrcode_camera.setSource(this);
         Barcode_camera.setSource(this);
         Fragment_Login.setSource(this);
+        Fragment_Clock.setSource(this);
         Log.d("TestMain:" , "02 ");
         //CheckLogin();
     }
@@ -102,6 +107,29 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         UserName.setText(this.UserName);
         UserAccount.setText(this.Account);
     }
+
+    public void StoreClockData(String Data)   //初次登入  設定登入資料 這樣下次就能自動登入
+    {
+
+        SharedPreferences userInfo = getSharedPreferences("data", MODE_PRIVATE);
+        SharedPreferences.Editor editor = userInfo.edit();
+        editor.putString("ClockData", Data);
+
+        editor.commit();
+        Log.d("TestMain:" , "保存鬧鐘資訊");
+        //this.getSupportFragmentManager().beginTransaction().hide(qrcode_camera).hide(Fragment_Login).hide(Fragment_1).addToBackStack(null).commit();
+        //this.getSupportFragmentManager().beginTransaction().replace(R.id.container, qrcode_camera).addToBackStack(null).commit();
+    }
+    public String getClockData()   //初次登入  設定登入資料 這樣下次就能自動登入
+    {
+        SharedPreferences userInfo = getSharedPreferences("data", MODE_PRIVATE);
+        String UserID = userInfo.getString("ClockData", null);//读取username
+
+
+
+        return UserID;
+    }
+
     private void LogOut()
     {
         //getSupportActionBar().setTitle("登入");
@@ -219,15 +247,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         else if (id == R.id.nav_manage)
         {
-            if (!Barcode_camera.isAdded())
+            if (!Fragment_Clock.isAdded())
             {
-                this.getSupportFragmentManager().beginTransaction().replace(R.id.container, Barcode_camera).addToBackStack(null).commit();
+                this.getSupportFragmentManager().beginTransaction().replace(R.id.container, Fragment_Clock).addToBackStack(null).commit();
             }
         }
 
         else if (id == R.id.nav_share)
         {
-
+            if (!Fragment_Calender.isAdded())
+            {
+                this.getSupportFragmentManager().beginTransaction().replace(R.id.container, Fragment_Calender).addToBackStack(null).commit();
+            }
         }
 
         else if (id == R.id.nav_send)
@@ -247,4 +278,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         MC.SocketInstruct = SocketInstruct;
         MC.start();
     }
+
+
 }
