@@ -165,6 +165,20 @@ public class Fragment_Clock extends Fragment
         return ClockData ;
     }
 
+    private void store_ClockData(String Data)
+    {
+        MA.StoreClockData(Data);
+    }
+    private String[] get_ClockData()
+    {
+        String[] ClockData =  MA.getClockData().split(";");
+
+        return ClockData ;
+    }
+
+
+
+
     public void setSource(MainActivity MA)
     {
         this.MA = MA;
