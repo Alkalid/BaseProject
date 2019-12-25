@@ -14,7 +14,11 @@
         android:layout_centerVertical="true"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text="https://upload.cc/"  />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="60dp"

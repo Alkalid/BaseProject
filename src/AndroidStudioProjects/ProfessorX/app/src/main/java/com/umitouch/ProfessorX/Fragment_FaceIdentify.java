@@ -171,6 +171,10 @@ public class Fragment_FaceIdentify extends Fragment {
 
     }
 
+    public void ShowResolution(String Resolution)
+    {
+        Toast.makeText(getActivity().getBaseContext(),"長*寬:",Toast.LENGTH_SHORT).show();
+    }
 
     public void Identify(String URL )//
     {

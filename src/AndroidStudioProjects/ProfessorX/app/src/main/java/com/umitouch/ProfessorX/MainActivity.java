@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Fragment_Login.setSource(this);
         Fragment_Clock.setSource(this);
         Log.d("TestMain:" , "02 ");
-        //CheckLogin();
+        CheckLogin();
     }
 
     public void CallJames(View v)
@@ -95,8 +95,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         editor.putString("UserAccount",   Account  );
         editor.commit();
         Log.d("TestMain:" , "保存用户資訊");
-        //this.getSupportFragmentManager().beginTransaction().hide(qrcode_camera).hide(Fragment_Login).hide(Fragment_1).addToBackStack(null).commit();
-        //this.getSupportFragmentManager().beginTransaction().replace(R.id.container, qrcode_camera).addToBackStack(null).commit();
+        this.getSupportFragmentManager().beginTransaction().replace(R.id.container, Fragment_FaceIdentify).addToBackStack(null).commit();
     }
     private void ShowUserData()//設定左邊選單的用戶資料
     {

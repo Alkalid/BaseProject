@@ -43,11 +43,14 @@ public class Fragment_AddFace extends Fragment
 
         return view;
     }
+    public void ShowResolution(String Resolution)
+    {
+        Toast.makeText(getActivity().getBaseContext(),"長*寬:",Toast.LENGTH_SHORT).show();
+    }
 
     public void setSource(MainActivity MA)
     {
         this.MA = MA;
-
     }
 
     public void AddSuccess()//顯示上傳成功
