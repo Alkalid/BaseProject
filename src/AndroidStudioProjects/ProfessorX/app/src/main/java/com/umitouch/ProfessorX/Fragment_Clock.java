@@ -165,6 +165,11 @@ public class Fragment_Clock extends Fragment
         return ClockData ;
     }
 
+
+
+
+
+
     public void setSource(MainActivity MA)
     {
         this.MA = MA;
