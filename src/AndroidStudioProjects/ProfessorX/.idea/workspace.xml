@@ -6,14 +6,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9e84152-144b-4333-b951-50f8b0cd6f76" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/umitouch/ProfessorX/Client_AddFace.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/umitouch/ProfessorX/Client_AddFace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/umitouch/ProfessorX/Fragment_AddFace.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/umitouch/ProfessorX/Fragment_AddFace.java" afterDir="false" />
-    </list>
+    <list default="true" id="f9e84152-144b-4333-b951-50f8b0cd6f76" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
