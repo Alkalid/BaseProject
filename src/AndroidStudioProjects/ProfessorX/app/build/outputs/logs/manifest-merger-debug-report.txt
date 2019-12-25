@@ -1,5 +1,6 @@
 -- Merging decision tree log ---
 manifest
+<<<<<<< Updated upstream
 ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
 INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
 INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
@@ -28,91 +29,121 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\kartd\.gradle\cach
 INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
 INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
 INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+=======
+ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\8b5dd159780dbf3840ce173773204cc1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\07e94a112581a63994a7432aefe951c1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:17:1-55:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\6bdd2a12b34551eb720c1bb5a0ee9446\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e9917ff43952a8b62f2b2e406a828ae6\AndroidManifest.xml:2:1-11:12
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\233720f1cb4b475ba67e261731b65609\AndroidManifest.xml:17:1-30:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8b8d49f6dce8731e5affb62c3c04c772\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\13573d93cbbb3904b77a2e2acf28438d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\f45fc6d4f0a2c80bdf28364accb01b08\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\c698db404241b24788140dded3892e1d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\0ff1e881c811776733fa2c985e631eda\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\24d005c7815330350df748f080d9a21a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\15f947daffcfb188630b229ceb25098e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\9d7b2578f81eee35000ac5c032ee2e8a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\9d0ee67025426beb1fcfa3740cd96ccc\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3fd44ddb77de729d6b3fa720a172e840\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\fb9958a9ecb51e5456c0d3ea17dd449f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\e5c396b184fcdde271953887f0a6c25c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a26a5481ab1dadb18a3530aee7e4d0a9\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\ff354999a54e96a2de3773159520395a\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+>>>>>>> Stashed changes
 	package
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:3:5-38
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:3:5-38
+		INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+		INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
+		INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:4:5-66
+ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:4:5-66
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:4:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:5:5-78
+ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:5:5-78
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:5:22-76
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:5:22-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:6:5-78
+ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:6:5-78
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:6:22-76
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:7:5-80
+ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:7:22-78
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:7:22-78
 uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:8:5-88
+ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:8:5-88
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:8:22-86
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:8:22-86
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:11:5-64
-MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:21:5-65
-MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:21:5-65
+ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:11:5-64
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:21:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:21:5-65
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:11:22-62
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:11:22-62
 application
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:13:5-33:19
-MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:45:5-53:19
-MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:45:5-53:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e03e5124b128e1baf5d7eda84cba4461\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e03e5124b128e1baf5d7eda84cba4461\AndroidManifest.xml:9:5-20
-MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\b95b805b74e656c6288ecd1da613d2fa\AndroidManifest.xml:22:5-28:19
-MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\b95b805b74e656c6288ecd1da613d2fa\AndroidManifest.xml:22:5-28:19
+ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:13:5-33:19
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:45:5-53:19
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:45:5-53:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e9917ff43952a8b62f2b2e406a828ae6\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e9917ff43952a8b62f2b2e406a828ae6\AndroidManifest.xml:9:5-20
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\233720f1cb4b475ba67e261731b65609\AndroidManifest.xml:22:5-28:19
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\233720f1cb4b475ba67e261731b65609\AndroidManifest.xml:22:5-28:19
 	android:supportsRtl
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:16:9-41
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:16:9-41
 	android:roundIcon
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:17:9-54
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:17:9-54
 	android:icon
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:15:9-43
 	android:allowBackup
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:19:9-40
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:19:9-40
 activity#com.umitouch.ProfessorX.MainActivity
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:20:9-30:20
+ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:20:9-30:20
 	android:label
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:23:13-45
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:23:13-45
 	android:configChanges
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:21:13-63
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:21:13-63
 	android:theme
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:24:13-56
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:24:13-56
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:22:13-64
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:22:13-64
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:25:13-29:29
+ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:26:17-69
+ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:26:25-66
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:28:17-77
+ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:28:27-74
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:28:27-74
 activity#com.umitouch.ProfessorX.qrcode_camera
-ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:31:9-32:20
+ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:31:9-32:20
 	android:name
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:31:19-71
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:31:19-71
 uses-sdk
+<<<<<<< Updated upstream
 INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
@@ -160,71 +191,118 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\kartd\.gradle\cach
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\7620b50ddde4993b5e3ce7eaca79b17d\AndroidManifest.xml:20:5-44
 INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+=======
+INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\8b5dd159780dbf3840ce173773204cc1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\8b5dd159780dbf3840ce173773204cc1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\07e94a112581a63994a7432aefe951c1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\07e94a112581a63994a7432aefe951c1\AndroidManifest.xml:20:5-44
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:19:5-43
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:19:5-43
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\6bdd2a12b34551eb720c1bb5a0ee9446\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\6bdd2a12b34551eb720c1bb5a0ee9446\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e9917ff43952a8b62f2b2e406a828ae6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e9917ff43952a8b62f2b2e406a828ae6\AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\233720f1cb4b475ba67e261731b65609\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\233720f1cb4b475ba67e261731b65609\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8b8d49f6dce8731e5affb62c3c04c772\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8b8d49f6dce8731e5affb62c3c04c772\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\13573d93cbbb3904b77a2e2acf28438d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\13573d93cbbb3904b77a2e2acf28438d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\f45fc6d4f0a2c80bdf28364accb01b08\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\f45fc6d4f0a2c80bdf28364accb01b08\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\c698db404241b24788140dded3892e1d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\c698db404241b24788140dded3892e1d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\0ff1e881c811776733fa2c985e631eda\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\0ff1e881c811776733fa2c985e631eda\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\24d005c7815330350df748f080d9a21a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\24d005c7815330350df748f080d9a21a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\15f947daffcfb188630b229ceb25098e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\15f947daffcfb188630b229ceb25098e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\9d7b2578f81eee35000ac5c032ee2e8a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\9d7b2578f81eee35000ac5c032ee2e8a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\9d0ee67025426beb1fcfa3740cd96ccc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\9d0ee67025426beb1fcfa3740cd96ccc\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3fd44ddb77de729d6b3fa720a172e840\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3fd44ddb77de729d6b3fa720a172e840\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\fb9958a9ecb51e5456c0d3ea17dd449f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\fb9958a9ecb51e5456c0d3ea17dd449f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\e5c396b184fcdde271953887f0a6c25c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\e5c396b184fcdde271953887f0a6c25c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a26a5481ab1dadb18a3530aee7e4d0a9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a26a5481ab1dadb18a3530aee7e4d0a9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\ff354999a54e96a2de3773159520395a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\ff354999a54e96a2de3773159520395a\AndroidManifest.xml:20:5-44
+INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+>>>>>>> Stashed changes
 	android:targetSdkVersion
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		ADDED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+		INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 uses-feature#android.hardware.camera
-ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:24:5-26:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:24:5-26:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:26:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:26:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:25:9-47
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:25:9-47
 uses-feature#android.hardware.camera.front
-ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:27:5-29:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:27:5-29:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:29:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:29:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:28:9-53
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:28:9-53
 uses-feature#android.hardware.camera.autofocus
-ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:32:5-34:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:32:5-34:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:34:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:34:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:33:9-57
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:33:9-57
 uses-feature#android.hardware.camera.flash
-ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:35:5-37:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:35:5-37:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:37:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:37:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:36:9-53
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:36:9-53
 uses-feature#android.hardware.screen.landscape
-ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:38:5-40:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:38:5-40:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:40:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:40:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:39:9-57
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:39:9-57
 uses-feature#android.hardware.wifi
-ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:41:5-43:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:41:5-43:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:43:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:43:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:42:9-45
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:42:9-45
 activity#com.journeyapps.barcodescanner.CaptureActivity
-ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:46:9-52:63
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:46:9-52:63
 	android:screenOrientation
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:49:13-56
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:49:13-56
 	android:clearTaskOnLaunch
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:48:13-45
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:48:13-45
 	android:stateNotNeeded
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:50:13-42
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:50:13-42
 	android:windowSoftInputMode
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:52:13-60
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:52:13-60
 	android:theme
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:51:13-54
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:51:13-54
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\6f27a28edb2121d63cb09ae0f323e8db\AndroidManifest.xml:47:13-74
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.4.0.aar\f3f8a741478d8d441bffa5f73b2da70a\AndroidManifest.xml:47:13-74
 provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
-ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\b95b805b74e656c6288ecd1da613d2fa\AndroidManifest.xml:23:9-27:43
+ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\233720f1cb4b475ba67e261731b65609\AndroidManifest.xml:23:9-27:43
 	android:authorities
-		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\b95b805b74e656c6288ecd1da613d2fa\AndroidManifest.xml:25:13-68
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\233720f1cb4b475ba67e261731b65609\AndroidManifest.xml:25:13-68
 	android:multiprocess
-		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\b95b805b74e656c6288ecd1da613d2fa\AndroidManifest.xml:27:13-40
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\233720f1cb4b475ba67e261731b65609\AndroidManifest.xml:27:13-40
 	android:exported
-		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\b95b805b74e656c6288ecd1da613d2fa\AndroidManifest.xml:26:13-37
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\233720f1cb4b475ba67e261731b65609\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\kartd\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\b95b805b74e656c6288ecd1da613d2fa\AndroidManifest.xml:24:13-83
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-1\files-1.1\extensions-1.1.1.aar\233720f1cb4b475ba67e261731b65609\AndroidManifest.xml:24:13-83
