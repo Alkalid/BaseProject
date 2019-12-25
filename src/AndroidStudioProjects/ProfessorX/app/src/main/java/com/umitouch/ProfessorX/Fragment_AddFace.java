@@ -52,12 +52,7 @@ public class Fragment_AddFace extends Fragment
 
     public void AddSuccess()
     {
-        id_EditText.getText().toString();
-        name_EditText.getText().toString();
-        fb_EditText.getText().toString();
-        ig_EditText.getText().toString();
-        identity_EditText.getText().toString();
-        CreatePerson();
+        CreatePerson(id_EditText.getText().toString(),name_EditText.getText().toString(),fb_EditText.getText().toString(),ig_EditText.getText().toString(),identity_EditText.getText().toString()  , MA.UID);
     }
 
     public void CreatePerson(String URL,String person_name,String person_fb,String person_ig ,String person_info ,String uid  )
