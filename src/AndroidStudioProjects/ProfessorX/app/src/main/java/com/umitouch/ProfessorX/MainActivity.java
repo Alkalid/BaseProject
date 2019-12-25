@@ -167,27 +167,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
-    public void StoreClockData(String Data)   //初次登入  設定登入資料 這樣下次就能自動登入
-    {
 
-        SharedPreferences userInfo = getSharedPreferences("data", MODE_PRIVATE);
-        SharedPreferences.Editor editor = userInfo.edit();
-        editor.putString("UserID", Data);
-
-        editor.commit();
-        Log.d("TestMain:" , "保存鬧鐘資訊");
-        //this.getSupportFragmentManager().beginTransaction().hide(qrcode_camera).hide(Fragment_Login).hide(Fragment_1).addToBackStack(null).commit();
-        //this.getSupportFragmentManager().beginTransaction().replace(R.id.container, qrcode_camera).addToBackStack(null).commit();
-    }
-    public String getClockData()   //初次登入  設定登入資料 這樣下次就能自動登入
-    {
-        SharedPreferences userInfo = getSharedPreferences("data", MODE_PRIVATE);
-        String UserID = userInfo.getString("UserID", null);//读取username
-
-
-
-        return UserID;
-    }
 
 
 ////   Qrcode的值

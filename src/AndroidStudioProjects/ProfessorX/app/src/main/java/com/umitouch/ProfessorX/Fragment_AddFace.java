@@ -32,14 +32,21 @@ public class Fragment_AddFace extends Fragment
         MA.setData("123");
         }
     });
+<<<<<<< Updated upstream
         // Inflate the layout for this fragment
+=======
+
+>>>>>>> Stashed changes
         id_EditText = (EditText)view.findViewById(R.id.id);
         name_EditText=(EditText)view.findViewById(R.id.name);
         fb_EditText=(EditText)view.findViewById(R.id.fb);
         ig_EditText=(EditText)view.findViewById(R.id.ig);
         identity_EditText=(EditText)view.findViewById(R.id.identity);
+<<<<<<< Updated upstream
        // CreatePerson("[img]https://upload.cc/i1/2019/12/18/naEAdh.jpg","王子嘉","https://www.facebook.com/profile.php?id=100003612286269","https://www.instagram.com/zi7909/?hl=zh-tw","學校:逢甲大學資工系","uml1uYPeVTUJU");
         CreatePerson("https://upload.cc/i1/2019/12/18/4b8V6z.jpg","林翊庭","https://www.facebook.com/lintippilin","https://www.instagram.com/tippi1105/?hl=zh-tw","學校:逢甲大學行銷系","uml1uYPeVTUJU");
+=======
+>>>>>>> Stashed changes
 
         return view;
     }

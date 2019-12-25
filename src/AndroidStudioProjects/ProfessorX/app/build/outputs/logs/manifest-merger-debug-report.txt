@@ -1,5 +1,6 @@
 -- Merging decision tree log ---
 manifest
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 ADDED from C:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
@@ -206,6 +207,8 @@ INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\
 		ADDED from C:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 		INJECTED from C:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 =======
+=======
+>>>>>>> Stashed changes
 ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
 INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
 INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:2:1-35:12
@@ -268,6 +271,10 @@ uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
 ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:8:5-88
 	android:name
 		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:8:22-86
+uses-permission#com.android.alarm.permission.SET_ALARM
+ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:9:5-78
+	android:name
+		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:9:22-75
 uses-permission#android.permission.CAMERA
 ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml:11:5-64
 MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:21:5-65
@@ -374,6 +381,7 @@ INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioPr
 		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\kartd\Documents\Gitkraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
 		INJECTED from D:\GitKraken\BaseProject\src\AndroidStudioProjects\ProfessorX\app\src\main\AndroidManifest.xml
@@ -440,3 +448,65 @@ ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\陳子皓\.gradle\
 		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:26:13-37
 	android:name
 		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\陳子皓\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:24:13-83
+=======
+uses-feature#android.hardware.camera
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:24:5-26:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:26:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:25:9-47
+uses-feature#android.hardware.camera.front
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:27:5-29:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:29:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:28:9-53
+uses-feature#android.hardware.camera.autofocus
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:32:5-34:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:34:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:33:9-57
+uses-feature#android.hardware.camera.flash
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:35:5-37:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:37:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:36:9-53
+uses-feature#android.hardware.screen.landscape
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:38:5-40:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:40:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:39:9-57
+uses-feature#android.hardware.wifi
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:41:5-43:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:43:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:42:9-45
+activity#com.journeyapps.barcodescanner.CaptureActivity
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:46:9-52:63
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:49:13-56
+	android:clearTaskOnLaunch
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:48:13-45
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:50:13-42
+	android:windowSoftInputMode
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:52:13-60
+	android:theme
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:51:13-54
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\fb7eec4def1890db1516f5c3c0f16275\zxing-android-embedded-3.4.0\AndroidManifest.xml:47:13-74
+provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:25:13-68
+	android:multiprocess
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] C:\Users\kartd\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:24:13-83
+>>>>>>> Stashed changes
