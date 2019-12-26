@@ -61,13 +61,24 @@ public class Client_AddFace extends Thread
     public void push(String str)
     {
         String[] SData = str.split(String.valueOf((char)(che9)))[1].split(String.valueOf((char)(che7)));
-
+        Log.d("TestIdentify:" , str );
         if (SData[0].equals("CreatePerson_success"))
         {
             FL.aaa();
         }
+        if (SData[0].equals("fail_size"))
+        {
+            FL.ccc();
+        }
+        if (SData[0].equals("fail_length"))
+        {
+            FL.ddd();
+        }
 
-
+        if (SData[0].equals("Identify_resolution"))//解析度
+        {
+            FL.ShowResolution(SData[1]);
+        }
     }
 
     public void setSocketInstruct(String SocketInstruct)

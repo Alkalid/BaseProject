@@ -45,7 +45,7 @@ public class Fragment_AddFace extends Fragment
     }
     public void ShowResolution(String Resolution)
     {
-        Toast.makeText(getActivity().getBaseContext(),"長*寬:",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getActivity().getBaseContext(),"長*寬: "  + Resolution,Toast.LENGTH_SHORT).show();
     }
 
     public void setSource(MainActivity MA)
@@ -57,9 +57,18 @@ public class Fragment_AddFace extends Fragment
     {
         CreatePerson(id_EditText.getText().toString(),name_EditText.getText().toString(),fb_EditText.getText().toString(),ig_EditText.getText().toString(),identity_EditText.getText().toString()  , MA.UID);
     }
+
     public void aaa()
     {
         Toast.makeText(getActivity().getBaseContext(),"嘿嘿你成功上傳了!!",Toast.LENGTH_SHORT).show();
+    }
+    public void ccc()
+    {
+        Toast.makeText(getActivity().getBaseContext(),"嘿嘿嘿你的圖片畫素太低囉請上傳別張!!",Toast.LENGTH_LONG).show();
+    }
+    public void ddd()
+    {
+        Toast.makeText(getActivity().getBaseContext(),"嘿嘿嘿你的圖片超過30MB囉請上傳別張!!",Toast.LENGTH_SHORT).show();
     }
     public void CreatePerson(String URL,String person_name,String person_fb,String person_ig ,String person_info ,String uid  )
     {
