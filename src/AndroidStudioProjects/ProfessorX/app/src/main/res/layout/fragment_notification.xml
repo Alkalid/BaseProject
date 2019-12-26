@@ -6,17 +6,54 @@
     android:background="#FFFFFF"
     tools:context=".Fragment_Notification">
 
-    <LinearLayout
+
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_marginTop="50dp">
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:src="@color/colorPrimary"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-    </LinearLayout>
+            <!-- Appear Whether information -->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/ousideDegreeText"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#111111"
+                android:text="24 ℃"
+                android:textSize="30dp"
+                />
+            <TextView
+                android:id="@+id/locationNameText"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:text="臺中"
+                android:gravity="bottom|left"/>
+            <TextView
+                android:id="@+id/symTimeText"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:text="更新時間 15:31"
+                android:gravity="bottom|left"
+                />
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>
