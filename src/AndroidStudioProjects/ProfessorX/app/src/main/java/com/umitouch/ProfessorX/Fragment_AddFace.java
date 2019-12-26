@@ -40,13 +40,17 @@ public class Fragment_AddFace extends Fragment
         ig_EditText=(EditText)view.findViewById(R.id.ig);
         identity_EditText=(EditText)view.findViewById(R.id.identity);
 
+
         return view;
+    }
+    public void ShowResolution(String Resolution)
+    {
+        Toast.makeText(getActivity().getBaseContext(),"長*寬:",Toast.LENGTH_SHORT).show();
     }
 
     public void setSource(MainActivity MA)
     {
         this.MA = MA;
-
     }
 
     public void AddSuccess()//顯示上傳成功

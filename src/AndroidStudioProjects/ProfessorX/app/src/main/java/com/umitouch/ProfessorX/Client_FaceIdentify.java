@@ -71,17 +71,19 @@ public class Client_FaceIdentify extends Thread
         if (SData[0].equals("Identify"))
         {
             RT_String += SData[1];
-
         }
         if (SData[0].equals("Identify_close"))
         {
             FL.IdentifySuccess(RT_String.split(String.valueOf((char)(che6))));
-
         }
-
         if (SData[0].equals("Identify_fail"))
         {
             FL.IdentifyFail(SData[1]);
+        }
+
+        if (SData[0].equals("Identify_resolution"))//解析度
+        {
+            FL.ShowResolution(SData[1]);
         }
 
 

@@ -68,6 +68,7 @@ public class Fragment_FaceIdentify extends Fragment {
     private TextView PersonInfo;
     private TextView PersonFB;
     private TextView PersonIG;
+    private TextView PersonConfidence;
     private ViewPager PersonImage_ViewPager;
 
     private LinearLayout Main_LinerLayout;
@@ -96,6 +97,7 @@ public class Fragment_FaceIdentify extends Fragment {
         PersonInfo = (TextView) view.findViewById(R.id.PersonInfo_TextView);
         PersonFB = (TextView) view.findViewById(R.id.PersonFB_TextView);
         PersonIG= (TextView) view.findViewById(R.id.PersonIG_TextView);
+        PersonConfidence = (TextView) view.findViewById(R.id.PersonConfidence_TextView);
         PersonImage_ViewPager = (ViewPager) view.findViewById(R.id.PersonImage_ViewPager);
         URL_EditText = (EditText) view.findViewById(R.id.URL_EditText);
         UMi_Button = (Button) view.findViewById(R.id.button);
@@ -143,8 +145,10 @@ public class Fragment_FaceIdentify extends Fragment {
         PersonFB.setText(IdentifyResult[2]);
         PersonIG.setText(IdentifyResult[3]);
         PersonInfo.setText(IdentifyResult[4]);
-        show(IdentifyResult[5].split(String.valueOf((char)(che8))));
+        PersonConfidence.setText("相似度"+IdentifyResult[5]);
+        show(IdentifyResult[6].split(String.valueOf((char)(che8))));
         Log.d("TestIdentify:" , IdentifyResult[5].toString());
+        Log.d("TestIdentify:" , IdentifyResult[6].toString());
     }
 
     public void show(String[] FaceList)
@@ -171,6 +175,10 @@ public class Fragment_FaceIdentify extends Fragment {
 
     }
 
+    public void ShowResolution(String Resolution)
+    {
+        Toast.makeText(getActivity().getBaseContext(),"長*寬: "+Resolution ,Toast.LENGTH_SHORT).show();
+    }
 
     public void Identify(String URL )//
     {

@@ -118,6 +118,16 @@
             android:text="name"
             />
         <TextView
+            android:id="@+id/PersonConfidence_TextView"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:autoLink="web"
+            android:gravity="center"
+            android:text="name"
+            />
+        <TextView
             android:id="@+id/PersonInfo_TextView"
             android:layout_width="300dp"
             android:layout_height="30dp"
