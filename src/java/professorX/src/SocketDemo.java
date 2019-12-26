@@ -148,28 +148,41 @@ public class SocketDemo
 							
 							String[] data = code.split(String.valueOf((char)(che9))); // uid  URL
 							cs.connect();
-																		
-							if ( cs.getIdentify( data[1] ).equals("success") )
+							String[] ImgData = cs.getImg(data[1]).split(";");
+							if(Integer.valueOf(ImgData[0]) >= 500 && Integer.valueOf(ImgData[1]) >= 500 )
 							{
-								sendToTarget( String.valueOf((char)(che9)) +"Identify_start" + String.valueOf((char)(che7))   );
-								if(cs.SendLock)
-								{
-									for (int i = 0; i< cs.SendPackage.size(); i++)
-									{
-										Thread.sleep(100);
-										sendToTarget(String.valueOf((char)(che9))+"Identify"+String.valueOf((char)(che7))+cs.SendPackage.get(i).toString()+String.valueOf((char)(che7)));
-			
-										System.out.println(cs.SendPackage.get(i).toString());
-									}	
-								}
-								Thread.sleep(100);
-								sendToTarget( String.valueOf((char)(che9)) +"Identify_close" + String.valueOf((char)(che7))   );
 								
+								sendToTarget( String.valueOf((char)(che9)) +"Identify_resolution" + String.valueOf((char)(che7)) + ImgData[1]+"*"+ImgData[0] +  String.valueOf((char)(che7)) );
+								
+								
+								if( cs.getIdentify( data[1] ).equals("success") && Integer.valueOf(ImgData[0]) >= 500 && Integer.valueOf(ImgData[1]) >= 500 )//identify
+								{
+									sendToTarget( String.valueOf((char)(che9)) +"Identify_start" + String.valueOf((char)(che7))   );
+									if(cs.SendLock)
+									{
+										for (int i = 0; i< cs.SendPackage.size(); i++)
+										{
+											Thread.sleep(100);
+											sendToTarget(String.valueOf((char)(che9))+"Identify"+String.valueOf((char)(che7))+cs.SendPackage.get(i).toString()+String.valueOf((char)(che7)));
+				
+											System.out.println(cs.SendPackage.get(i).toString());
+										}	
+									}
+									Thread.sleep(100);
+									sendToTarget( String.valueOf((char)(che9)) +"Identify_close" + String.valueOf((char)(che7))   );
+									
+								}
+								else
+								{
+									sendToTarget( String.valueOf((char)(che9)) +"Identify_fail" + String.valueOf((char)(che7))+cs.SendPackage.get(0).toString() + String.valueOf((char)(che7)) );
+								}
 							}
 							else
 							{
-								sendToTarget( String.valueOf((char)(che9)) +"Identify_fail" + String.valueOf((char)(che7))+cs.SendPackage.get(0).toString() + String.valueOf((char)(che7)) );
+								sendToTarget( String.valueOf((char)(che9)) +"Identify_fail"  + String.valueOf((char)(che7)) + "fail_size" + String.valueOf((char)(che7)) );
 							}
+							//step1
+							
 
 							isTerminated();
 							
@@ -180,8 +193,25 @@ public class SocketDemo
 						{
 							String[] data = code.split(String.valueOf((char)(che9))); // String URL,String person_name,String person_fb,String person_ig ,String person_info ,String uid
 							cs.connect();
-							cs.CreatePerson(data[0],data[1],data[2],data[3],data[4],data[5]);
-							sendToTarget( String.valueOf((char)(che9)) +"CreatePerson_success" + String.valueOf((char)(che7))   );
+							String[] ImgData = cs.getImg(data[0]).split(";");
+							sendToTarget( String.valueOf((char)(che9)) +"Identify_resolution" + String.valueOf((char)(che7)) + ImgData[1]+"*"+ImgData[0] +  String.valueOf((char)(che7)) );
+							if(Integer.valueOf(ImgData[0]) >= 500 && Integer.valueOf(ImgData[1]) >= 500 )
+							{
+								if( cs.getFileLength(data[0]) < 10485760  )
+								{
+									cs.CreatePerson(data[0],data[1],data[2],data[3],data[4],data[5]);
+									sendToTarget( String.valueOf((char)(che9)) +"CreatePerson_success" + String.valueOf((char)(che7))   );
+								}
+								else
+								{
+									sendToTarget( String.valueOf((char)(che9)) +"fail_length"  + String.valueOf((char)(che7)) );
+									System.out.println("fail_length");
+								}
+							}
+							else
+							{
+								sendToTarget( String.valueOf((char)(che9)) +"fail_size"  + String.valueOf((char)(che7)) );
+							}
 						}
 						
 						

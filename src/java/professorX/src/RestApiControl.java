@@ -33,7 +33,7 @@ public class RestApiControl
 		Face_Detect Detect = new Face_Detect();
 		String faceId = Detect.Face_Detect(url);
 		faceId = faceId.substring(1, faceId.length() -1 );
-		System.out.println("string faceId: "+ faceId );
+		//System.out.println("string faceId: "+ faceId );
 		
 		JSONObject result = new JSONObject(faceId);
 		
@@ -60,7 +60,7 @@ public class RestApiControl
 		}
 		else
 		{
-			System.out.println( "success"  );
+			//System.out.println( "success"  );
 			
 			
 			Object jsonOb = j.getJSONArray("candidates").getJSONObject(0).getString("personId");
@@ -69,7 +69,7 @@ public class RestApiControl
 			Identify_result.add("success" );
 			Identify_result.add(jsonOb.toString() );
 			Identify_result.add(jsonOb2.toString() );
-			System.out.println( "\n"+jsonOb+"\n"+jsonOb2  );		//這是回傳結果perconid
+			System.out.println( "success\n"+jsonOb+"\n"+jsonOb2  );		//這是回傳結果perconid
 		}
 		
 		return Identify_result;
