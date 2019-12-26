@@ -8,14 +8,11 @@
 
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="50dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="100dp"
+            android:visibility="visible"
             android:orientation="horizontal">
 
             <!-- Appear Whether information -->
@@ -55,5 +52,24 @@
                 android:gravity="bottom|left"
                 />
         </LinearLayout>
-    </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:textSize="25dp"
+                android:text="即將來臨的事件"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"></LinearLayout>
+        </LinearLayout>
+
+
 </FrameLayout>
