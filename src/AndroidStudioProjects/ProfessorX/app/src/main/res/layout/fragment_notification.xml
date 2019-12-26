@@ -9,24 +9,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_centerVertical="true"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:text="Fragment_notify" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="187dp"
-            android:layout_height="wrap_content"
-            android:text="修改字串"
-            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@color/colorPrimary"/>
 
     </LinearLayout>
-
 </FrameLayout>
