@@ -12,6 +12,7 @@ import java.security.Security;
 import java.sql.*;    
 import java.io.Console;
 
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 import java.awt.image.BufferedImage;
@@ -48,7 +49,16 @@ class CoreSystem
 		//cs.getIdentify("https://storage.googleapis.com/www-cw-com-tw/article/201812/article-5c29b03176521.jpg");
 		//cs.Person_AddFace("d2caae92-782a-45d4-b1d9-e0d919ef1bf7","https://storage.googleapis.com/www-cw-com-tw/article/201812/article-5c29b03176521.jpg","uml1uYPeVTUJU" );
 		//cs.getImg("https://www.facebook.com/CubeSat.TW/posts/2234087903287367/");
-		cs.getIdentify("https://www.thinkingtaiwan.com/sites/default/files/styles/author-photo-normal/public/images/photo/writer/11146191_10152629609406065_6142867647903751859_n.jpg?itok=NLMFkvAQ");	
+		//cs.getIdentify("https://www.thinkingtaiwan.com/sites/default/files/styles/author-photo-normal/public/images/photo/writer/11146191_10152629609406065_6142867647903751859_n.jpg?itok=NLMFkvAQ");
+		/*try
+		{
+			cs.getFileLength("https://cdn1.techbang.com/system/images/381038/original/1a04a7599dc30433e5057070f0bda9dd.png?1485096061.jpg");
+		}
+		catch(Exception e) 
+		{
+			
+		}*/
+		
 	}
 	
 	public void connect()	// ��嚙踐��蕭嚙質謍堆蕭賹蕭嚙�
@@ -243,27 +253,14 @@ class CoreSystem
 		String DataSuite = "";
 		String PersonData = "";
 		String PersonFace = "";
-		String ImageData[] ;
-		Boolean sizecorrect = false;
 		LinkedList Identify_result = new LinkedList();
 		int che6 = 6;
 		try
 		{
-			ImageData = this.getImg(URL).split(";");
-			if( Integer.valueOf(ImageData[0]) > 400 && Integer.valueOf(ImageData[1]) > 400 )
-			{
-				sizecorrect = true;
-				RestApiControl AC = new RestApiControl();
-				Identify_result = AC.face_identify( URL ); // 1.fail/succ  2.personId   3.confidence
-			}
-	///////////////////////////////////////////////////////////////////////////////////////////////////////// Step1   ImageSize		 
-			if( sizecorrect == false ) 
-			{
-				SendLock = true;
-				DataSuite="fail_size";
-				State="fail";
-			}
-			else if(Identify_result.get(0).equals("fail") || sizecorrect == false) 
+			RestApiControl AC = new RestApiControl();
+			Identify_result = AC.face_identify( URL ); // 1.fail/succ  2.personId   3.confidence
+			
+			if(Identify_result.get(0).equals("fail") ) 
 			{
 				SendLock = true;
 				DataSuite="fail";
@@ -274,9 +271,10 @@ class CoreSystem
 				State="success";
 				PersonData = getPersonIdData( Identify_result.get(1).toString() );	
 				PersonFace = getPersonIdFace( Identify_result.get(1).toString() );	
+				System.out.println("start addface");
 				
-				
-				DataSuite="success"+String.valueOf((char)(che6))+PersonData+String.valueOf((char)(che6))+PersonFace;
+				System.out.println("end addface");
+				DataSuite="success"+String.valueOf((char)(che6))+PersonData+String.valueOf((char)(che6))+Identify_result.get(2)+String.valueOf((char)(che6))+PersonFace;
 				//person_name 6 ....  person_info
 				//person_face 6 .... 
 				SendLock = true;
@@ -610,5 +608,31 @@ class CoreSystem
 		}
 		return result;
 	 }
+	
+	public  long getFileLength(String downloadUrl) throws Exception
+	{
+		  if(downloadUrl == null || "".equals(downloadUrl)){
+			  return 0L ; 
+		  }
+	      URL url = new URL(downloadUrl);
+	      HttpURLConnection conn = null;
+	      try 
+	      {
+	          conn = (HttpURLConnection) url.openConnection();
+	          conn.setRequestMethod("HEAD");
+	          conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows 7; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36 YNoteCef/5.8.0.1 (Windows)");
+	          System.out.println( conn.getContentLength()  );
+	          return (long) conn.getContentLength();
+	      } 
+	      catch (Exception e) 
+	      {
+	          return 0L;
+	      } 
+	      finally 
+	      {
+	          conn.disconnect();
+	      }
+   }
+
 	
 }

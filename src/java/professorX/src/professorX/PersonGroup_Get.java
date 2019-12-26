@@ -27,7 +27,7 @@ public class PersonGroup_Get
 
          URI uri = builder.build();
          HttpPost request = new HttpPost(uri);
-         request.setHeader("Ocp-Apim-Subscription-Key", "30d2ac8ee3bb4df0a42e82b24b315599");
+         request.setHeader("Ocp-Apim-Subscription-Key", "09be8044d5e44518a9b90a1f4af22f21");
 
 
          // Request body
